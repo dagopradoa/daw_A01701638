@@ -19,11 +19,12 @@
 </div>
 
 <div class="container">
-    <ul class="nav nav-tabs">
-    <li class="active"><a data-toggle="tab" href="#home"> About </a></li>
-    <li><a data-toggle="tab" href="#menu1"> Concepts </a></li>
-    <li><a data-toggle="tab" href="#menu2"> Common Errors </a></li>
-    <li><a data-toggle="tab" href="#menu3"> Questions </a></li>
+    <ul class="nav nav-pills">
+    <li class="active"><a data-toggle="pill" href="#home"> About </a></li>
+    <li><a data-toggle="pill" href="#menu1"> Concepts </a></li>
+    <li><a data-toggle="pill" href="#menu2"> Common Errors </a></li>
+    <li><a data-toggle="pill" href="#menu3"> Questions </a></li>
+    <li><a data-toggle="pill" href="#menu4"> Investigacion1 </a></li>
   </ul>
 
   <div class="tab-content">
@@ -166,7 +167,93 @@
     </div>
     <div id="menu3" class="tab-pane fade">
       <h3>Questions</h3>
-      <p>Not yet</p>
+        <h4>¿Cuál es la diferencia entre Internet y la World Wide Web?</h4>
+      <p>Internet es la Red de redes, mientras que la WWW es un sistema de hipertextos accesibles mediante Internet.</p>
+        <h4>¿Cuál es el propósito de los métodos HTTP: GET, HEAD, POST, PUT, PATCH, DELETE?</h4>
+      <p>Son un conjunto de métodos de petición para indicar la acción que se desea realizar para un recurso determinado.<br>
+        El método GET  solicita una representación de un recurso específico. Las peticiones que usan el método GET sólo deben recuperar datos.<br>
+        El método HEAD pide una respuesta idéntica a la de una petición GET, pero sin el cuerpo de la respuesta.<br>
+        El método POST se utiliza para enviar una entidad a un recurso en específico, causando a menudo un cambio en el estado o efectos secundarios en el servidor.<br>
+        El modo PUT reemplaza todas las representaciones actuales del recurso de destino con la carga útil de la petición.<br>
+        El método DELETE borra un recurso en específico<br>
+        El método PATCH  es utilizado para aplicar modificaciones parciales a un recurso.<br>
+        </p>
+        <h4>¿Qué método HTTP se debe utilizar al enviar un formulario HTML, por ejemplo cuando ingresas tu usuario y contraseña en algún sitio? ¿Por qué?</h4>
+      <p>Los formularios están delimitados con la etiqueta FORM Esta etiqueta agrupa varios elementos del formulario, como botones y casillas de texto, y posee 2 atributos: METHOD y ACTION.<br>
+        Se utiliza está etiqueta debido a los distintos atributos que se pueden utilizar de ella.
+        </p>
+        <h4>¿Qué método HTTP se utiliza cuando a través de un navegador web se accede a una página a través de un URL? </h4>
+      <p>Se utiliza el método GET, para obtener la información del servidor</p>
+        <h4>Un servidor web devuelve una respuesta HTTP con código 200. ¿Qué significa esto? ¿Ocurrió algún error?</h4>
+      <p>Es la respuesta estándar para peticiones correctas. Y no, no es un error es un resultado de petición correcta.</p>
+        <h4>¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que intentó acceder al sitio y se encontró con un error 404? ¿Por qué?</h4>
+      <p>Significa que la página no se encontro. El servidor realizó la petición, sin embargo no encontro el recurso solicitado</p>
+        <h4>¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que intentó acceder al sitio y se encontró con un error 500? ¿Por qué?</h4>
+      <p>No, ya que el error es un error interno del servidor.</p>
+        <h4>¿Qué significa que un atributo HTML5 esté depreciado o desaprobado (deprecated)? Menciona algunos elementos de HTML 4 que en HTML5 estén desaprobados.</h4>
+      <p>HTML5 define detalladas reglas de parse, incluyendo un control de errores, para que esta sintaxis sea compatible con las implementaciones más populares. Los agentes de usuario seguirás las mismas reglas que para los que actualmente tienen text/html.</p>
+        <p>Algunos de los nuevos elementos son:<br>
+        'article' elemento que nos permite declarar un trozo del contenido como artículo. Ideal para blogs o periódicos.<br>
+        'aside' representa un trozo de contenido que se relaciona muy levemente con el resto del contenido.<br>
+        'dialog' elemento que permite reprensetar conversaciones.<br>
+        'figure' podrás usarlo para asociar con un caption un contenido incrustado<br>
+        'footer'  parece que me han leido la mente o quizas leyeron este post. Sección de la página para contener información sobre el autor, copyright <br>
+        'header' representa a la sección de cabecera.<br>
+        'nav' representa la sección de la página orientada a la navegación.<br>
+        'section' elemento que indica que se trata de una sección genérica.<br>
+        'audio' y 'video' para el contenido multimedia.<br>
+        'embed' es un elemento dedicado para contenido de plugins.<br>
+        'm' representa el texto marcado.<br>
+        'meter' usado para representar medidas, por ejemplo el tamaño del disco usado<br>
+        'time' usado para mostrar fechas y/o tiempo.<br>
+        'canvas' usado para mostrar gráficos renderizados en tiempo real, por ejemplo gráficos, juegos <br>
+        'commnad' relacionado con los comandos que el usuario puede invocar.<br>
+        'datagrid' ideal para mostrar un arbol de datos o una tabla tabulada.<br>
+        'details' muestra información adicionar si el usuario lo demanda.<br>
+        'datalist' junto con el nuevo atributo list para los 'input' puede ser usado para crear comboboxes<br>
+        Entre otros.
+        </p>
+        <h4>¿Cuáles son las diferencias principales entre HTML 4 y HTML5?</h4>
+      <p>HTML5 permite incluir elementos de SVG y MathML.<br>
+        Se introducen nuevos elementos, como: section, article, aside, header, footer, etc.<br>
+        Se introducen nuevos atributos, como: media, charset, autofocus, placeholder, etc.<br>
+        Algunos elementos cambian, como: a, b, i, menu, etc.<br>
+        Algunos atributos cambian, como: type, name, summary, etc.<br>
+        Algunos elementos desaparecen, como: basefont, big, center, etc.<br>
+        Algunos atributos desaparecen, como: align, background, bgcolor, etc.<br>
+        Mejora de las API, como: getElementsByClassName() y innerHTML.<br>
+        </p>
+        <h4>¿Qué componentes de estructura y estilo tiene una tabla?</h4>
+      <p>'table' define la tabla<br>
+          'tr' define una columna de una tabla<br>
+          'td' define elementos de una tabla<br>
+          'th' define el titulo en una tabla<br>
+          'caption' define un titulo<br>
+          </p>
+        <h4>¿Cuáles son los principales controles de una forma HTML5?</h4>
+      <p>HTML5 define detalladas reglas de parse, incluyendo un control de errores, para que esta sintaxis sea compatible con las implementaciones más populares. Los agentes de usuario seguirás las mismas reglas que para los que actualmente tienen text/html.</p>
+        <h4>¿Qué tanto soporte HTML5 tiene el navegador que utilizas? </h4>
+      <p>Chrome es uno de los navegadores que más soporta HTML5</p>
+        <h3>Referencias</h3>
+        <p>https://es.slideshare.net/MontcheVG/diferencias-entre-internet-y-www<br>
+        https://developer.mozilla.org/es/docs/Web/HTTP/Methods<br>
+        http://es.ccm.net/contents/236-formularios-html<br>
+        http://www.anieto2k.com/2007/06/16/las-principales-diferencias-entre-html5-y-html4/<br>
+        https://es.wikipedia.org/wiki/Anexo:C%C3%B3digos_de_estado_HTTP<br>
+        https://blogs.ua.es/pi/2011/01/17/%C2%BFcuales-son-las-diferencias-entre-html4-xhtml-1-0-y-html5/<br>
+        https://www.w3schools.com/html/html_tables.asp<br>
+        http://html5test.com/results/desktop.html
+        </p>
+    </div>
+    <div id="menu4" class="tab-pane fade">
+        <div class="row">
+            <div class="col-sm-6" style="background-color:antiquewhite;">
+                <h4>Ciclo de vida de sistemas de información</h4>
+            </div>
+            <div class="col-sm-6" style="background-color:lavenderblush;">
+                <h4>Ciclo de desarrollo de sistemas de información</h4>
+            </div>
+        </div>
     </div>
   </div>
 </div>
