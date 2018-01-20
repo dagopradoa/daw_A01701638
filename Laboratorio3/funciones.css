@@ -1,0 +1,17 @@
+#tabla-fondooscuro {
+    text-align: center;!important
+    text-decoration-color: azure;
+}
+
+p{
+    font-size:12ppx;
+    text-align:left;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.pregunta {
+    font-size:14ppx;
+    font-style: oblique;
+    text-align: left;
+}
+
