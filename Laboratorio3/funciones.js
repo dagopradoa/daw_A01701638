@@ -1,12 +1,12 @@
 function table(){
     
     let n = parseInt(prompt("Ingresa un numero","1"));
-    let data = "<h4>Pruba 1</h4><table class='table table-striped'><thead><tr><th>n</th><th>n^2</th><th>n^3</th></tr>";
+    let data = "<h4>Pruba 1</h4><table class='table table-striped'><thead><tr><th>n</th><th>n^2</th><th>n^3</th></tr></thead><tbody>";
     
     for(i = 1; i<=n; i++){
-        str += "<tr><td>"+i+"</td><td>"+Math.pow(i,2)+"</td><td>"+Math.pow(i,3)+"</td></tr>";
+        data += "<tr><td>"+i+"</td><td>"+Math.pow(i,2)+"</td><td>"+Math.pow(i,3)+"</td></tr>";
     }
-    str += "</table>";
+    data += "</tbody></table>";
     
     document.getElementById("js1").innerHTML = data;
 }
