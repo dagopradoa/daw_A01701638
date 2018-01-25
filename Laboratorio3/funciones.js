@@ -36,7 +36,7 @@ function sum(){
 
 function prb3(){
     
-    let str = "<h4>Prueba 3</h4>"
+    let str = "<h4>Prueba 3</h4>";
     str += "<div class='form-group'><label for='numbers'>Ingresa los valores separados por comas:</label><input id='contador' type='text' placeholder='-1,0,1,2,3,..,6' name='numb'></div>";
     str += "<div class='input-group-append'><button class='btn btn-primary' type='button' onclick='cont()'>Contar</button></div></div><div id='js1_3'></div>";
     document.getElementById("js1").innerHTML = str;
@@ -45,7 +45,7 @@ function prb3(){
 
 function cont(){
     let str = document.getElementById("contador").value.split(',');
-    let solve = "<h4>Prueba 3</h4>"
+    let solve = "<h4>Prueba 3</h4>";
     let neg=0, pos=0, zero=0;
     for(i=0;i<str.lenght;i++){
         if(parseInt(str[i])==0){
@@ -63,7 +63,7 @@ function cont(){
 function prb4(){
     
     let str = "<h4>Prueba 4</h4>";
-    str += "<div class='form-group'><label for='numbers'>Ingresa los valores separados por comas:</label><input id='promedio' type='text' placeholder='-1,0,1,2,3,..,6' name='numb'></div>";
+    str += "<div class='form-group'><label for='numbers'>Ingresa los valores separados por comas y si es cambio de renglon punto y coma:</label><input id='promedio' type='text' placeholder='1,2,3;3,4,5;6,7,8;...0' name='numb'></div>";
     str += "<div class='input-group-append'><button class='btn btn-primary' type='button' onclick='prom()'>Promediar</button></div></div><div id='js1_4'></div>";
     document.getElementById("js1").innerHTML = str;
     
@@ -71,15 +71,23 @@ function prb4(){
 
 function prom(){
     
-    let str = document.getElementById("promedio").value.split(',');
-    let solve = "<h4>Prueba 3</h4>"
-    let aux=0, cont=0;
-    for(i=0;i<str.lenght;i++){
-        aux += parseInt(str[i]);
-        cont++;
+    let str = document.getElementById("promedio").value.split(';');
+    for (i=0;i<str.lenght;i++){
+        str[i]=str.split(',');
     }
-    aux /= cont;
-    solve += "<p>El promedio es:"+aux+".</p>";
+    let solve = "<h4>Prueba 3</h4>";
+    let aux=0, cont=[];
+    for(i=0;i<str.lenght;i++){
+        aux = 0
+        for(j=0;str[i].length;j++){
+            aux += parseInt(str[i][j]);
+            aux /= str[i][j].length;
+        }
+        cont.push(aux);
+    }
+    for(i=0;i<cont.length;i++){
+        solve += "<p>El promedio es:"+aux[i]+".</p>";
+    }
     document.getElementById("js1_4").innerHTML = solve;
     
 }
@@ -95,9 +103,56 @@ function prb5(){
 
 function inv(){
     let str = document.getElementById("inversor").value.split(',');
-    let solve = "<h4>Prueba 5</h4>"
+    let solve = "<h4>Prueba 5</h4>";
     str += "";
     str = str.split("").reverse().join("");
     solve += "<p>El inverso es:"+str+".</p>";
     document.getElementById("js1_5").innerHTML = solve;
 }
+
+function prb6(){
+    
+    let str = "<h4>Prueba 6</h>";
+    let a = parseInt(prompt("Ingresa el valor del lado 'a' del triángulo","1"));
+    let b = parseInt(prompt("Ingresa el valor del lado 'b' del triángulo","1"));
+    str += "<div class='input-group-append'><button class='btn btn-primary' type='button' onclick='hipot_out()'>Hipotenusa</button></div></div><div class='input-group-append'><button class='btn btn-primary' type='button' onclick='perim_out(triangulofav)'>Perimetro</button></div></div><div class='input-group-append'><button class='btn btn-primary' type='button' onclick='area_out(triangulofav)'>Area</button></div></div><div id='js1_5'></div>";
+    var triangulofav = new Object();
+    triangulofav.a = a;
+    triangulofav.b = b;
+    triangulofav.c = hipot(triangulofav);
+    document.getElementById("js1").innerHTML = str;
+    
+}
+
+function triangulo(a,b){
+    this.a= parseInt(a);
+    this.b= parseInt(b);
+}
+
+function hipot(triangulo){
+    return Math.sqrt((Math.pow(triangulo.a,2))+(Math.pow(triangulo.b,2)));
+}
+
+function hipot_out(triangulo){
+    let str = "<p>La hipotenusa es:"+hipot(triangulo)+".</p>";
+    document.getElementById("js1_6").innerHTML = str;
+}                    
+
+function perim(triangulo){
+    let hipo = hipot(triangulo);
+    return triangulo.a+triangulo.b+hipo;
+}
+
+function perim_out(triangulo){
+    let str = "<p>El perimetro es:"+perim(triangulo)+".</p>";
+    document.getElementById("js1_6").innerHTML = str;
+}  
+    
+function area(triangulo){
+    return (triangulo.a*triangulo.b)/2;
+}
+
+function area_out(triangulo){
+    let str = "<p>El area es:"+area(triangulo)+".</p>";
+    document.getElementById("js1_6").innerHTML = solve;
+}  
