@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="funciones.css">
+    <script src="lab_five_js.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
@@ -24,8 +25,12 @@
       }
     </style>
     
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Lato:100italic' rel='stylesheet' type='text/css'>
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     
 </head>
 <body>
@@ -73,6 +78,95 @@
     <div class = "container-fluid">
         <div class="had">
             <h1 class="had-r1">LABS <span class="had-amp">&amp;</span> INVESTIGATIONS</h1>
+        </div>
+    </div>
+    
+    <div class = "container-fluid">
+    <div class="jumbotron jumbotron-fluid">
+        <h4>Validar contraseña</h4>
+        <div class='form-group row'>
+            <div class="col-1"></div>
+            <label for='numbers' class = "col-5 col-form-label">Contraseña:</label>
+            <div class="col-5">
+                <input class="form-control" type="password" value="hunter2" id="psw1">
+            </div>
+        </div>
+        <div class='form-group row'>
+            <div class="col-1"></div>
+            <label for='numbers' class = "col-5 col-form-label">Validar contraseña:</label>
+            <div class="col-5">
+                <input class="form-control" type="password" value="hunter2" id="psw2">
+            </div>
+        </div>
+        <div class='input-group-append'>
+            <button class='btn btn-primary' type='button' onclick='validar()'>Validar</button>
+        </div>
+        <div id="five_1"></div>
+    </div>
+    </div>
+    
+    <div class = "container-fluid">
+        <div class = "jumbotron jumbotron-fluid">
+            <div class="puopu">
+                <h4 class="puopu-r1">Tienda<span class="puopu-small">de</span>Interes</h4>
+            </div>
+            <div class="row">
+                <div class="col-sm-4"><img src="http://salsabor.knorr.com.mx/img/salsas/salsa-verde-cocida.jpg" class="img-thumbnail" alt="Cinque Terre" width="304" height="236"></div>
+                <div class="col-sm-4"><img src="http://salsabor.knorr.com.mx/img/salsas/salsa-de-chile-capon-y-cacahuate.jpg" class="img-thumbnail" alt="Cinque Terre" width="304" height="236"></div>
+                <div class="col-sm-4"><img src="http://salsabor.knorr.com.mx/img/salsas/guacamole.jpg" class="img-thumbnail" alt="Cinque Terre" width="304" height="236"></div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="row">
+                        <div class="col-lg-2"></div>
+                        <div class="col-lg-8">
+                            <div class="input-group">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" type="button"><i class="material-icons">remove</i></button>
+                                </span>
+                                <input type="text" class="form-control">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" type="button"><i class="material-icons">add</i></button>
+                                </span>
+                        </div>
+                        </div>
+                        <div class="col-lg-2"></div>
+                    </div>
+                <div class="col-sm-4">
+                    <div class="row">
+                        <div class="col-lg-2"></div>
+                        <div class="col-lg-8">
+                            <div class="input-group">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" type="button"><i class="material-icons">remove</i></button>
+                                </span>
+                                <input type="text" class="form-control">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" type="button"><i class="material-icons">add</i></button>
+                                </span>
+                        </div>
+                        </div>
+                        <div class="col-lg-2"></div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="row">
+                        <div class="col-lg-2"></div>
+                        <div class="col-lg-8">
+                            <div class="input-group">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" type="button"><i class="material-icons">remove</i></button>
+                                </span>
+                                <input type="text" class="form-control">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" type="button"><i class="material-icons">add</i></button>
+                                </span>
+                        </div>
+                        </div>
+                        <div class="col-lg-2"></div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     
