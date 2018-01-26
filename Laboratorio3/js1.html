@@ -10,96 +10,77 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="funciones.js"></script>
+    
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700,900' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script>var ml = { timelines: {}};</script>
+    <style>
+      body {
+        font: 13px "Source Sans Pro", Arial, Helvetica, sans-serif;
+        color: dimgray;
+        text-align: center;
+      }
+      .moving-letters {
+      }
+    </style>
+    
+    <link href='https://fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato:100italic' rel='stylesheet' type='text/css'>
+    
 </head>
 <body>
-    <div class = "container">  
-        <div id="demo" class="carousel slide" data-ride="carousel">
-          <ul class="carousel-indicators">
-            <li data-target="#demo" data-slide-to="0" class="active"></li>
-            <li data-target="#demo" data-slide-to="1"></li>
-            <li data-target="#demo" data-slide-to="2"></li>
-          </ul>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="https://i.pinimg.com/originals/44/76/24/447624226763532cf26aef0e9cb62720.jpg" alt="BK1" width="1110" height="400">
-              <div class="carousel-caption">
-                <h2>LABORATORIOS</h2>
-                <h4>DAW y BD</h4>
-              </div>   
+    <nav class = "navbar fixed-top navbar-expand-sm bg-dark navbar-dark">
+    <a class = "navbar-brand" href = "aboutme.html">
+        DPA
+    </a>
+    <ul class = "navbar-nav">
+        <li class = "nav-item">
+            <a class = "nav-link" href = "course.html">
+                CURSO
+            </a>
+        </li>
+        <li class = "nav-item dropdown">
+            <a class = "nav-link dropdown-toggle" href="#" id = "navbardrop" data-toggle = "dropdown">
+                LABORATORIOS
+            </a>
+            <div class = "dropdown-menu">
+                <a class = "dropdown-item" href = "labone.html">
+                    Laboratorio 1
+                </a>
+                <a class = "dropdown-item" href = "labthree.html">
+                    Laboratorio 3
+                </a>
+                <a class = "dropdown-item" href = "js1.html">
+                    Laboratorio 4
+                </a>
+                <a class = "dropdown-item" href = "labtwo.html">
+                    Investigación 1
+                </a>
+                <a class = "dropdown-item" href = "quest1.html">
+                    Cuestrionario 1
+                </a>
             </div>
-            <div class="carousel-item">
-              <img src="http://www.elportondelacondesa.com/wp-content/uploads/2013/06/fondo_porton_blog.jpg" alt="BK2" width="1110" height="400">
-              <div class="carousel-caption">
-                <h2>LABORATORIOS</h2>
-                <h4>DAW y BD</h4>
-              </div>   
-            </div>
-            <div class="carousel-item">
-              <img src="http://www.photos-public-domain.com/wp-content/uploads/2011/02/black-painted-brick-wall-texture.jpg" alt="BK3" width="1110" height="400">
-              <div class="carousel-caption">
-                <h2>LABORATORIOS</h2>
-                <h4>DAW y BD</h4>
-              </div>   
-            </div>
-          </div>
-          <a class="carousel-control-prev" href="#demo" data-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-          </a>
-          <a class="carousel-control-next" href="#demo" data-slide="next">
-            <span class="carousel-control-next-icon"></span>
-          </a>
+        </li>
+        <li class = "nav-item">
+            <a class = "nav-link" href = "#contact.html">
+                CONTACTO
+            </a>
+        </li>
+    </ul>
+    </nav> 
+    
+    <div class = "container-fluid">
+        <div class="had">
+            <h1 class="had-r1">LABS <span class="had-amp">&amp;</span> INVESTIGATIONS</h1>
         </div>
     </div>
     
-    <div class = "container">
-        <nav class = "navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
-        <a class = "navbar-brand" href = "aboutme.html">
-            DPA
-        </a>
-        <ul class = "navbar-nav">
-            <li class = "nav-item">
-                <a class = "nav-link" href = "course.html">
-                    CURSO
-                </a>
-            </li>
-            <li class = "nav-item dropdown">
-                <a class = "nav-link dropdown-toggle" href="#" id = "navbardrop" data-toggle = "dropdown">
-                    LABORATORIOS
-                </a>
-                <div class = "dropdown-menu">
-                    <a class = "dropdown-item" href = "labone.html">
-                        Laboratorio 1
-                    </a>
-                    <a class = "dropdown-item" href = "labthree.html">
-                        Laboratorio 3
-                    </a>
-                    <a class = "dropdown-item" href = "js1.html">
-                        Laboratorio 4
-                    </a>
-                    <a class = "dropdown-item" href = "labtwo.html">
-                        Investigación 1
-                    </a>
-                    <a class = "dropdown-item" href = "quest1.html">
-                        Cuestrionario 1
-                    </a>
-                </div>
-            </li>
-            <li class = "nav-item">
-                <a class = "nav-link" href = "#contact.html">
-                    CONTACTO
-                </a>
-            </li>
-        </ul>
-    </nav>
-    </div>
-    
-    <div class = "container">
     <div class="jumbotron jumbotron-fluid" style="background-color:darkgray;">
       <div class="container">
         <h1 class="text-white">Laboratorio 4</h1>      
-        <p class="text-white">Fundamentos de JavaScript</p>
+        <p class="text-white" style="text-align: center">Fundamentos de JavaScript</p>
       </div>
-    </div>
     </div>
     
     <div class="container-fluid">
@@ -139,35 +120,35 @@
     
     <div class = "container" style = "background-color: slategray">
         <section>
-            <h2>Questions</h2>
-            <h3 class="pregunta">¿Qué diferencias y semejanzas hay entre Java y JavaScript?</h3>
-            <p> [1] Ambos son orientados a objetos, pueden correr en un navegador y fueron influenciadas por C y C++.</p>
-            <p>[2] Java es un tipo de lenguaje compilado, mientras que JS está en texto y es interpretado. Java, además de correr en un navegador, también puede correr en máquinas virtuales. Java está basado en clases, mientras que JS es texto interpretado
+            <h2 style="color:aliceblue">Questions</h2>
+            <h3 class="pregunta" style="color:aliceblue">¿Qué diferencias y semejanzas hay entre Java y JavaScript?</h3>
+            <p style="color:aliceblue"> [1] Ambos son orientados a objetos, pueden correr en un navegador y fueron influenciadas por C y C++.</p>
+            <p style="color:aliceblue">[2] Java es un tipo de lenguaje compilado, mientras que JS está en texto y es interpretado. Java, además de correr en un navegador, también puede correr en máquinas virtuales. Java está basado en clases, mientras que JS es texto interpretado
             </p>
-            <h3 class="pregunta">¿Qué métodos tiene el objeto Date?</h3>
-            <p>[4] Date.prtotype.getDate() -> Devuelve el número de día de la fecha especificada<br>
+            <h3 class="pregunta" style="color:aliceblue">¿Qué métodos tiene el objeto Date?</h3>
+            <p style="color:aliceblue">[4] Date.prtotype.getDate() -> Devuelve el número de día de la fecha especificada<br>
                 Date.prototype.getDay() -> Devuelve el día de la semana de la fecha especificada<br>
                 Date.prototype.getFullYear() -> Devuelve el año completo de la fecha especificada<br>
                 Date.prototype.getMonth() -> Devuelve el nombre del mes de la fecha especificada<br>
                 [3] Date.now() -> Devuelve el valor numérico correspondiente a la hora actual
             </p>
-            <h3 class="pregunta">¿Qué métodos tienen los arreglos?</h3>
-            <p>[5] Array.from() -> Crea un array de un objeto iterable<br>
+            <h3 class="pregunta" style="color:aliceblue">¿Qué métodos tienen los arreglos?</h3>
+            <p style="color:aliceblue">[5] Array.from() -> Crea un array de un objeto iterable<br>
                 Array.isArray() -> Devuelve true si una variable es un array<br>
                 Array.observe() -> Observa los cambios en un array de manera asíncrona<br>
                 Array.of() -> Crea un nuevo array con un numero de argumentos variable<br>
                 Array.prototype.pop() -> Elimina el último elementos de la matriz unidimensional
             </p>
-            <h3 class="pregunta">¿Cómo se declara una variable con alcance local dentro de una función?</h3>
-            <p>[6] Se declara con ‘let’ dentro de la función en la que se quiere utilizar</p>
-            <h3 class="pregunta">¿Qué implicaciones tiene utilizar variables globales dentro de funciones?</h3>
+            <h3 class="pregunta" style="color:aliceblue">¿Cómo se declara una variable con alcance local dentro de una función?</h3>
+            <p style="color:aliceblue">[6] Se declara con ‘let’ dentro de la función en la que se quiere utilizar</p>
+            <h3 class="pregunta" style="color:aliceblue">¿Qué implicaciones tiene utilizar variables globales dentro de funciones?</h3>
             <p>[7] Que al momento de hacerle un cambio a la variable, este cambio se realiza en todas las funciones</p>
-            <h3 class="pregunta">¿Qué método de String se puede utilizar para buscar patrones con expresiones regulares?¿Para qué podrías utilizar esto en una aplicación web?</h3>
-            <p>[8] Se utiliza el método ‘match()’, que como parámetro recibe una expresión regular.</p>
-            <p>[9] Se puede utilizar en un buscador; para analizar el texto que se ingresa y buscar si coincide con cualquier otro del texto.
+            <h3 class="pregunta" style="color:aliceblue">¿Qué método de String se puede utilizar para buscar patrones con expresiones regulares?¿Para qué podrías utilizar esto en una aplicación web?</h3>
+            <p style="color:aliceblue">[8] Se utiliza el método ‘match()’, que como parámetro recibe una expresión regular.</p>
+            <p style="color:aliceblue">[9] Se puede utilizar en un buscador; para analizar el texto que se ingresa y buscar si coincide con cualquier otro del texto.
             </p>
-            <h2>REFERENCIAS</h2>
-            <p>1.- https://www.java.com/en/download/faq/java_javascript.xml<br>
+            <h2 style="color:aliceblue">REFERENCIAS</h2>
+            <p style="color:aliceblue">1.- https://www.java.com/en/download/faq/java_javascript.xml<br>
             2.- https://www.diffen.com/difference/Java_%28programming_language%29_vs_JavaScript<br>
             3.- https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Date<br>
             4.- https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Date/prototype#M.C3.A9todos<br>
@@ -181,7 +162,110 @@
     </div>
     
     <footer>
-        <p>© LABORATORIOS DAGO</p>
+    <div class="jumbotron jumbotron-fluid" style="background-color: darkgray">
+        <div class = "container">
+        <div class="moving-letters">
+            <h1 class="ml5">
+                <span class="text-wrapper">
+                    <span class="line line1"></span>
+                    <span class="letters letters-left">DAW</span>
+                    <span class="letters ampersand">&amp;</span>
+                    <span class="letters letters-right">BD</span>
+                    <span class="line line2"></span>
+                </span>
+            </h1>
+            <script>
+            ml.timelines["ml5"] = anime.timeline({loop: true})
+              .add({
+                targets: '.ml5 .line',
+                opacity: [0.5,1],
+                scaleX: [0, 1],
+                easing: "easeInOutExpo",
+                duration: 700
+              }).add({
+                targets: '.ml5 .line',
+                duration: 600,
+                easing: "easeOutExpo",
+                translateY: function(e, i, l) {
+                  var offset = -0.625 + 0.625*2*i;
+                  return offset + "em";
+                }
+              }).add({
+                targets: '.ml5 .ampersand',
+                opacity: [0,1],
+                scaleY: [0.5, 1],
+                easing: "easeOutExpo",
+                duration: 600,
+                offset: '-=600'
+              }).add({
+                targets: '.ml5 .letters-left',
+                opacity: [0,1],
+                translateX: ["0.5em", 0],
+                easing: "easeOutExpo",
+                duration: 600,
+                offset: '-=300'
+              }).add({
+                targets: '.ml5 .letters-right',
+                opacity: [0,1],
+                translateX: ["-0.5em", 0],
+                easing: "easeOutExpo",
+                duration: 600,
+                offset: '-=600'
+              }).add({
+                targets: '.ml5',
+                opacity: 0,
+                duration: 1000,
+                easing: "easeOutExpo",
+                delay: 1000
+              });
+            </script>
+
+            <style>
+            .ml5 {
+              position: relative;
+              font-weight: 300;
+              font-size: 4.5em;
+              color: #402d2d;
+            }
+            .ml5 .text-wrapper {
+              position: relative;
+              display: inline-block;
+              padding-top: 0.1em;
+              padding-right: 0.05em;
+              padding-bottom: 0.15em;
+              line-height: 1em;
+            }
+            .ml5 .line {
+              position: absolute;
+              left: 0;
+              top: 0;
+              bottom: 0;
+              margin: auto;
+              height: 3px;
+              width: 100%;
+              background-color: aliceblue;
+              transform-origin: 0.5 0;
+            }
+            .ml5 .ampersand {
+              font-family: Baskerville, "EB Garamond", serif;
+              font-style: italic;
+              font-weight: 400;
+              width: 1em;
+              margin-right: -0.1em;
+              margin-left: -0.1em;
+            }
+            .ml5 .letters {
+            color: aliceblue;
+              display: inline-block;
+              opacity: 0;
+            }
+            </style>
+        </div>
+        </div>
+        <div class = "container">
+            <p style="color:aliceblue">© 2018 Laboratorios Dago.</p>
+        </div>
+    </div>
     </footer>
     
 </body>

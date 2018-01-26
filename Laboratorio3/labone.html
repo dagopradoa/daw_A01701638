@@ -9,96 +9,77 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+    
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700,900' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script>var ml = { timelines: {}};</script>
+    <style>
+      body {
+        font: 13px "Source Sans Pro", Arial, Helvetica, sans-serif;
+        color: dimgray;
+        text-align: center;
+      }
+      .moving-letters {
+      }
+    </style>
+    
+    <link href='https://fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato:100italic' rel='stylesheet' type='text/css'>
+    
 </head>
 <body>
-    <div class = "container">  
-        <div id="demo" class="carousel slide" data-ride="carousel">
-          <ul class="carousel-indicators">
-            <li data-target="#demo" data-slide-to="0" class="active"></li>
-            <li data-target="#demo" data-slide-to="1"></li>
-            <li data-target="#demo" data-slide-to="2"></li>
-          </ul>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="https://i.pinimg.com/originals/44/76/24/447624226763532cf26aef0e9cb62720.jpg" alt="BK1" width="1110" height="400">
-              <div class="carousel-caption">
-                <h2>LABORATORIOS</h2>
-                <h4>DAW y BD</h4>
-              </div>   
+    <nav class = "navbar fixed-top navbar-expand-sm bg-dark navbar-dark">
+    <a class = "navbar-brand" href = "aboutme.html">
+        DPA
+    </a>
+    <ul class = "navbar-nav">
+        <li class = "nav-item">
+            <a class = "nav-link" href = "course.html">
+                CURSO
+            </a>
+        </li>
+        <li class = "nav-item dropdown">
+            <a class = "nav-link dropdown-toggle" href="#" id = "navbardrop" data-toggle = "dropdown">
+                LABORATORIOS
+            </a>
+            <div class = "dropdown-menu">
+                <a class = "dropdown-item" href = "labone.html">
+                    Laboratorio 1
+                </a>
+                <a class = "dropdown-item" href = "labthree.html">
+                    Laboratorio 3
+                </a>
+                <a class = "dropdown-item" href = "js1.html">
+                    Laboratorio 4
+                </a>
+                <a class = "dropdown-item" href = "labtwo.html">
+                    Investigación 1
+                </a>
+                <a class = "dropdown-item" href = "quest1.html">
+                    Cuestrionario 1
+                </a>
             </div>
-            <div class="carousel-item">
-              <img src="http://www.elportondelacondesa.com/wp-content/uploads/2013/06/fondo_porton_blog.jpg" alt="BK2" width="1110" height="400">
-              <div class="carousel-caption">
-                <h2>LABORATORIOS</h2>
-                <h4>DAW y BD</h4>
-              </div>   
-            </div>
-            <div class="carousel-item">
-              <img src="http://www.photos-public-domain.com/wp-content/uploads/2011/02/black-painted-brick-wall-texture.jpg" alt="BK3" width="1110" height="400">
-              <div class="carousel-caption">
-                <h2>LABORATORIOS</h2>
-                <h4>DAW y BD</h4>
-              </div>   
-            </div>
-          </div>
-          <a class="carousel-control-prev" href="#demo" data-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-          </a>
-          <a class="carousel-control-next" href="#demo" data-slide="next">
-            <span class="carousel-control-next-icon"></span>
-          </a>
+        </li>
+        <li class = "nav-item">
+            <a class = "nav-link" href = "#contact.html">
+                CONTACTO
+            </a>
+        </li>
+    </ul>
+    </nav> 
+    
+    <div class = "container-fluid">
+        <div class="had">
+            <h1 class="had-r1">LABS <span class="had-amp">&amp;</span> INVESTIGATIONS</h1>
         </div>
     </div>
-    
-    <div class = "container">
-        <nav class = "navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
-        <a class = "navbar-brand" href = "aboutme.html">
-            DPA
-        </a>
-        <ul class = "navbar-nav">
-            <li class = "nav-item">
-                <a class = "nav-link" href = "course.html">
-                    CURSO
-                </a>
-            </li>
-            <li class = "nav-item dropdown">
-                <a class = "nav-link dropdown-toggle" href="#" id = "navbardrop" data-toggle = "dropdown">
-                    LABORATORIOS
-                </a>
-                <div class = "dropdown-menu">
-                    <a class = "dropdown-item" href = "labone.html">
-                        Laboratorio 1
-                    </a>
-                    <a class = "dropdown-item" href = "labthree.html">
-                        Laboratorio 3
-                    </a>
-                    <a class = "dropdown-item" href = "js1.html">
-                        Laboratorio 4
-                    </a>
-                    <a class = "dropdown-item" href = "labtwo.html">
-                        Investigación 1
-                    </a>
-                    <a class = "dropdown-item" href = "quest1.html">
-                        Cuestrionario 1
-                    </a>
-                </div>
-            </li>
-            <li class = "nav-item">
-                <a class = "nav-link" href = "#contact.html">
-                    CONTACTO
-                </a>
-            </li>
-        </ul>
-    </nav>
-    </div>   
-    
-    <div class = "container">
+
     <div class="jumbotron jumbotron-fluid" style="background-color:darkgray;">
       <div class="container">
         <h1 class="text-white">Laboratorio 1</h1>      
-        <p class="text-white">Introducción a las apicaciones web y HTML</p>
+        <p class="text-white" style="text-align: center">Introducción a las apicaciones web y HTML</p>
       </div>
-    </div>
     </div>
 
     <div class="container">
@@ -114,17 +95,17 @@
           <div class="container-fluid">
               <div class="row">
                 <div class="col-sm-6" style="background-color:darkgray;">
-                    <h4 id = "tabla-fondooscuro">URL</h4>
-                    <p id = "tabla-fondooscuro">Son las siglas correspondientes a: "Uniform Resource Locator".</p>
-                    <p id = "tabla-fondooscuro">Se trata de la secuencia de caracteres que sigue un estándar y que permite denominar recursos dentro del entorno de Internet para que puedan ser 		localizados.</p>
-                    <p id = "tabla-fondooscuro">Referencia: Julián Pérez Porto y María Merino. (2010). Definición de URL. 14 de Octubre de 2018, de Definicion.de Sitio web:
+                    <h4 class="tabla-fondooscuro" style="color:aliceblue">URL</h4>
+                    <p class = "tabla-fondooscuro" style="color:aliceblue">Son las siglas correspondientes a: "Uniform Resource Locator".</p>
+                    <p class = "tabla-fondooscuro" style="color:aliceblue">Se trata de la secuencia de caracteres que sigue un estándar y que permite denominar recursos dentro del entorno de Internet para que puedan ser 		localizados.</p>
+                    <p class = "tabla-fondooscuro" style="color:aliceblue">Referencia: Julián Pérez Porto y María Merino. (2010). Definición de URL. 14 de Octubre de 2018, de Definicion.de Sitio web:
                     https://definicion.de/url/</p>
                 </div>
                 <div class="col-sm-6" style="background-color:dimgray;">
-                    <h4 id = "tabla-fondooscuro">MIME</h4>
-                    <p id = "tabla-fondooscuro">Son las siglas correspondientes a: "Multipurpouse Internet Mail Extensions".</p>
-                    <p id = "tabla-fondooscuro">Permite mejorar la posibilidad de transferencia de texto entre distintos idiomas y alfabetos en el envío de emails, y también sirve para el envío de 		archivos a través del protocolo HTTP.</p>
-                    <p id = "tabla-fondooscuro">Leandro Alegsa. (S.F.). Definición de MIME. 14 de Octubre de 2018, de Alegsa Sitio web: http://www.alegsa.com.ar/Dic/mime.php</p>
+                    <h4 class = "tabla-fondooscuro" style="color:aliceblue">MIME</h4>
+                    <p class = "tabla-fondooscuro" style="color:aliceblue">Son las siglas correspondientes a: "Multipurpouse Internet Mail Extensions".</p>
+                    <p class = "tabla-fondooscuro" style="color:aliceblue">Permite mejorar la posibilidad de transferencia de texto entre distintos idiomas y alfabetos en el envío de emails, y también sirve para el envío de 		archivos a través del protocolo HTTP.</p>
+                    <p class = "tabla-fondooscuro" style="color:aliceblue">Leandro Alegsa. (S.F.). Definición de MIME. 14 de Octubre de 2018, de Alegsa Sitio web: http://www.alegsa.com.ar/Dic/mime.php</p>
                 </div>
               </div>
             </div>
@@ -135,43 +116,43 @@
               <p>The 5th most commons of each</p>
               <div class="row">
                 <div class="col-sm-3" style="background-color:slategray;">
-                    <h4 id = "tabla-fondooscuro">HTTP:</h4>
-                    <p id = "tabla-fondooscuro"><b>401:</b> Unathorized. Sucede cuando se intenta acceder a un sitio restringido.<br>
+                    <h4 class = "tabla-fondooscuro" style="color:aliceblue">HTTP:</h4>
+                    <p class = "tabla-fondooscuro" style="color:aliceblue"><b>401:</b> Unathorized. Sucede cuando se intenta acceder a un sitio restringido.<br>
                     <b>400:</b> Bad request. La solicitud para acceder al servidor falló.<br>
                     <b>403:</b> Forbbiden. Sucede si intentas acceder a un sitio prohibido o inhabilitado.<br>
                     <b>404:</b> Not found. El sitio no ha sido encontrado.<br>
                     <b>505:</b> Internal Server Error. No se pudo cargar el servidor.
                     </p>
-                    <p id = "tabla-fondooscuro">http://royal.pingdom.com/2009/05/06/the-5-most-common-http-errors-according-to-google/</p>
+                    <p id = "tabla-fondooscuro" style="color:aliceblue">http://royal.pingdom.com/2009/05/06/the-5-most-common-http-errors-according-to-google/</p>
                 </div>
                 <div class="col-sm-3" style="background-color:darkslategray;">
-                    <h4 id = "tabla-fondooscuro">XML:</h4>
-                    <p id = "tabla-fondooscuro"><b>Forgetten Declaration Statement:</b> Se necesia declarar el lenguaje.<br>
+                    <h4 class = "tabla-fondooscuro" style="color:aliceblue">XML:</h4>
+                    <p class = "tabla-fondooscuro" style="color:aliceblue"><b>Forgetten Declaration Statement:</b> Se necesia declarar el lenguaje.<br>
                     <b>Unnested elements:</b> XML trabaja de manera jerarquica. Asegurate de que todo este anidado.<br>
                     <b>Open Tags:</b> Es necesario cerrar todos los tags.<br>
                     <b>No Root Element:</b> Al ser del lenguaje del tipo arbol, es necesario tener una raíz.<br>
                     <b>Multiple White-Space characters</b> XML trata de cuidar la memoria, por lo que reducira todos los espacios a uno solo.
                     </p>
-                    <p id = "tabla-fondooscuro">https://www.thoughtco.com/common-xml-errors-3466605</p>
+                    <p class = "tabla-fondooscuro" style="color:aliceblue">https://www.thoughtco.com/common-xml-errors-3466605</p>
                 </div>
                 <div class="col-sm-3" style="background-color:slategray;">
-                    <h4 id = "tabla-fondooscuro">XHTML:</h4>
-                    <p id = "tabla-fondooscuro"><b>Forgetting to terminate entities:</b> Usaste un carácter inválido.<br>
+                    <h4 class = "tabla-fondooscuro" style="color:aliceblue">XHTML:</h4>
+                    <p class = "tabla-fondooscuro" style="color:aliceblue"><b>Forgetting to terminate entities:</b> Usaste un carácter inválido.<br>
                     <b>Amperstand in URLs</b> Uso no apropiado de los amersands<br>
                     <b>Unproperly tag closing:</b> Es necesario cerrar todos los tags.<br>
                     <b>Overlapping and contex-sensitive tags:</b> Intentar cerrar un tag con el tag que se usa para abrir.<br>
                     </p>
-                    <p id = "tabla-fondooscuro">https://rudd-o.com/archives/common-mistakes-that-lead-to-invalid-xhtml</p>
+                    <p class = "tabla-fondooscuro" style="color:aliceblue">https://rudd-o.com/archives/common-mistakes-that-lead-to-invalid-xhtml</p>
                 </div>
                 <div class="col-sm-3" style="background-color:darkslategray;">
-                    <h4 id = "tabla-fondooscuro">HTML5:</h4>
-                    <p id = "tabla-fondooscuro"><b>Trusting local storage:</b> Brechas de seguridad.<br>
+                    <h4 class = "tabla-fondooscuro" style="color:aliceblue">HTML5:</h4>
+                    <p class = "tabla-fondooscuro" style="color:aliceblue"><b>Trusting local storage:</b> Brechas de seguridad.<br>
                     <b>Expecting compatibility among browsers:</b> Incompativilidad en ciertos browsers.<br>
                     <b>Assuming high performance:</b> Se espera que se corra a igual velocidad en todos los servidores.<br>
                     <b>Limited accessibility:</b> No se utilizan todas las posibilidades de accesibilidad.<br>
                     <b>Not using HTML5 enhancements:</b> Se utilizan limitadas etiquetas.
                     </p>
-                    <p id = "tabla-fondooscuro">https://www.toptal.com/html5/top-5-mistakes-that-html5-developers-make</p>
+                    <p class = "tabla-fondooscuro" style="color:aliceblue">https://www.toptal.com/html5/top-5-mistakes-that-html5-developers-make</p>
                 </div>
               </div>
             </div>
@@ -179,44 +160,44 @@
             <div class="container-fluid">
               <div class="row">
                 <div class="col-sm-3" style="background-color:darkslategray;">
-                    <h4 id = "tabla-fondooscuro">JS:</h4>
-                    <p id = "tabla-fondooscuro"><b>Thinking there is block-level scope:</b> Se asume que cada bloque crece, sin ser así.<br>
+                    <h4 class = "tabla-fondooscuro" style="color:aliceblue">JS:</h4>
+                    <p class = "tabla-fondooscuro" style="color:aliceblue"><b>Thinking there is block-level scope:</b> Se asume que cada bloque crece, sin ser así.<br>
                     <b>Creating memory leaks:</b> Pérdida de memoria.<br>
                     <b>Assuming high performance:</b> Se espera que se corra a igual velocidad en todos los servidores.<br>
                     <b>Confusion about equality:</b> JavaScript "forza" a las variables a ser del tipo boolean.<br>
                     <b>Inefficient DOM manipulation:</b> El uso del DOM es poco eficiente.
                     </p>
-                    <p id = "tabla-fondooscuro">https://www.toptal.com/javascript/10-most-common-javascript-mistakes</p>
+                    <p class = "tabla-fondooscuro" style="color:aliceblue">https://www.toptal.com/javascript/10-most-common-javascript-mistakes</p>
                 </div>
                 <div class="col-sm-3" style="background-color:slategray;">
-                    <h4 id = "tabla-fondooscuro">PHP:</h4>
-                    <p id = "tabla-fondooscuro"><b>Leaving dangling array references after foreach loops:</b> Si mo se usa de manera adecuada, puede causar problemas.<br>
+                    <h4 class = "tabla-fondooscuro" style="color:aliceblue">PHP:</h4>
+                    <p class = "tabla-fondooscuro" style="color:aliceblue"><b>Leaving dangling array references after foreach loops:</b> Si mo se usa de manera adecuada, puede causar problemas.<br>
                     <b>Misunderstanding isset() behavior:</b> Es fácil cometer muchos errores.<br>
                     <b>Confusion about returning by reference vs. by value:</b> Es complicado saber si regresa array por referencia o array por valor.<br>
                     <b>Performing queries in a loop:</b> Cada iteración hace una solicitud a la base de datos.<br>
                     <b>Memory usage headfakes and inefficiencies:</b> Utiliza un proxy que hace trabajo sucio en las bases de datos.
                     </p>
-                    <p id = "tabla-fondooscuro">https://www.toptal.com/php/10-most-common-mistakes-php-programmers-make</p>
+                    <p class = "tabla-fondooscuro" style="color:aliceblue">https://www.toptal.com/php/10-most-common-mistakes-php-programmers-make</p>
                 </div>
                 <div class="col-sm-3" style="background-color:darkslategray;">
-                    <h4 id = "tabla-fondooscuro" >JSP:</h4>
-                    <p id = "tabla-fondooscuro"><b>Leaving dangling array references after foreach loops:</b> Si mo se usa de manera adecuada, puede causar problemas.<br>
+                    <h4 class = "tabla-fondooscuro" style="color:aliceblue">JSP:</h4>
+                    <p class = "tabla-fondooscuro" style="color:aliceblue"><b>Leaving dangling array references after foreach loops:</b> Si mo se usa de manera adecuada, puede causar problemas.<br>
                     <b>Misunderstanding isset() behavior:</b> Es fácil cometer muchos errores.<br>
                     <b>Confusion about returning by reference vs. by value:</b> Es complicado saber si regresa array por referencia o array por valor.<br>
                     <b>Performing queries in a loop:</b> Cada iteración hace una solicitud a la base de datos.<br>
                     <b>Memory usage headfakes and inefficiencies:</b> Utiliza un proxy que hace trabajo sucio en las bases de datos.
                     </p>
-                    <p id = "tabla-fondooscuro">https://www.toptal.com/php/10-most-common-mistakes-php-programmers-make</p>
+                    <p class = "tabla-fondooscuro" style="color:aliceblue">https://www.toptal.com/php/10-most-common-mistakes-php-programmers-make</p>
                 </div>
                 <div class="col-sm-3" style="background-color:slategray;">
-                    <h4 id = "tabla-fondooscuro">AJAX:</h4>
-                    <p id = "tabla-fondooscuro"><b>Leaving dangling array references after foreach loops:</b> Si mo se usa de manera adecuada, puede causar problemas.<br>
+                    <h4 class = "tabla-fondooscuro" style="color:aliceblue">AJAX:</h4>
+                    <p class = "tabla-fondooscuro" style="color:aliceblue"><b>Leaving dangling array references after foreach loops:</b> Si mo se usa de manera adecuada, puede causar problemas.<br>
                     <b>Misunderstanding isset() behavior:</b> Es fácil cometer muchos errores.<br>
                     <b>Confusion about returning by reference vs. by value:</b> Es complicado saber si regresa array por referencia o array por valor.<br>
                     <b>Performing queries in a loop:</b> Cada iteración hace una solicitud a la base de datos.<br>
                     <b>Memory usage headfakes and inefficiencies:</b> Utiliza un proxy que hace trabajo sucio en las bases de datos.
                     </p>
-                    <p id = "tabla-fondooscuro">https://www.toptal.com/php/10-most-common-mistakes-php-programmers-make</p>
+                    <p class = "tabla-fondooscuro" style="color:aliceblue">https://www.toptal.com/php/10-most-common-mistakes-php-programmers-make</p>
                 </div>
               </div>
             </div>
@@ -309,7 +290,110 @@
     </div>
     
     <footer>
-        <p>© LABORATORIOS DAGO</p>
+    <div class="jumbotron jumbotron-fluid" style="background-color: darkgray">
+        <div class = "container">
+        <div class="moving-letters">
+            <h1 class="ml5">
+                <span class="text-wrapper">
+                    <span class="line line1"></span>
+                    <span class="letters letters-left">DAW</span>
+                    <span class="letters ampersand">&amp;</span>
+                    <span class="letters letters-right">BD</span>
+                    <span class="line line2"></span>
+                </span>
+            </h1>
+            <script>
+            ml.timelines["ml5"] = anime.timeline({loop: true})
+              .add({
+                targets: '.ml5 .line',
+                opacity: [0.5,1],
+                scaleX: [0, 1],
+                easing: "easeInOutExpo",
+                duration: 700
+              }).add({
+                targets: '.ml5 .line',
+                duration: 600,
+                easing: "easeOutExpo",
+                translateY: function(e, i, l) {
+                  var offset = -0.625 + 0.625*2*i;
+                  return offset + "em";
+                }
+              }).add({
+                targets: '.ml5 .ampersand',
+                opacity: [0,1],
+                scaleY: [0.5, 1],
+                easing: "easeOutExpo",
+                duration: 600,
+                offset: '-=600'
+              }).add({
+                targets: '.ml5 .letters-left',
+                opacity: [0,1],
+                translateX: ["0.5em", 0],
+                easing: "easeOutExpo",
+                duration: 600,
+                offset: '-=300'
+              }).add({
+                targets: '.ml5 .letters-right',
+                opacity: [0,1],
+                translateX: ["-0.5em", 0],
+                easing: "easeOutExpo",
+                duration: 600,
+                offset: '-=600'
+              }).add({
+                targets: '.ml5',
+                opacity: 0,
+                duration: 1000,
+                easing: "easeOutExpo",
+                delay: 1000
+              });
+            </script>
+
+            <style>
+            .ml5 {
+              position: relative;
+              font-weight: 300;
+              font-size: 4.5em;
+              color: #402d2d;
+            }
+            .ml5 .text-wrapper {
+              position: relative;
+              display: inline-block;
+              padding-top: 0.1em;
+              padding-right: 0.05em;
+              padding-bottom: 0.15em;
+              line-height: 1em;
+            }
+            .ml5 .line {
+              position: absolute;
+              left: 0;
+              top: 0;
+              bottom: 0;
+              margin: auto;
+              height: 3px;
+              width: 100%;
+              background-color: aliceblue;
+              transform-origin: 0.5 0;
+            }
+            .ml5 .ampersand {
+              font-family: Baskerville, "EB Garamond", serif;
+              font-style: italic;
+              font-weight: 400;
+              width: 1em;
+              margin-right: -0.1em;
+              margin-left: -0.1em;
+            }
+            .ml5 .letters {
+            color: aliceblue;
+              display: inline-block;
+              opacity: 0;
+            }
+            </style>
+        </div>
+        </div>
+        <div class = "container">
+            <p style="color:aliceblue">© 2018 Laboratorios Dago.</p>
+        </div>
+    </div>
     </footer>
     
 </body>

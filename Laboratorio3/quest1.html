@@ -9,100 +9,83 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+    
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700,900' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script>var ml = { timelines: {}};</script>
+    <style>
+      body {
+        font: 13px "Source Sans Pro", Arial, Helvetica, sans-serif;
+        color: dimgray;
+        text-align: center;
+      }
+      .moving-letters {
+      }
+    </style>
+    
+    <link href='https://fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato:100italic' rel='stylesheet' type='text/css'>
+    
 </head>
 <body>
-    <div class = "container">  
-        <div id="demo" class="carousel slide" data-ride="carousel">
-          <ul class="carousel-indicators">
-            <li data-target="#demo" data-slide-to="0" class="active"></li>
-            <li data-target="#demo" data-slide-to="1"></li>
-            <li data-target="#demo" data-slide-to="2"></li>
-          </ul>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="https://i.pinimg.com/originals/44/76/24/447624226763532cf26aef0e9cb62720.jpg" alt="BK1" width="1110" height="400">
-              <div class="carousel-caption">
-                <h2>LABORATORIOS</h2>
-                <h4>DAW y BD</h4>
-              </div>   
+    <nav class = "navbar fixed-top navbar-expand-sm bg-dark navbar-dark">
+    <a class = "navbar-brand" href = "aboutme.html">
+        DPA
+    </a>
+    <ul class = "navbar-nav">
+        <li class = "nav-item">
+            <a class = "nav-link" href = "course.html">
+                CURSO
+            </a>
+        </li>
+        <li class = "nav-item dropdown">
+            <a class = "nav-link dropdown-toggle" href="#" id = "navbardrop" data-toggle = "dropdown">
+                LABORATORIOS
+            </a>
+            <div class = "dropdown-menu">
+                <a class = "dropdown-item" href = "labone.html">
+                    Laboratorio 1
+                </a>
+                <a class = "dropdown-item" href = "labthree.html">
+                    Laboratorio 3
+                </a>
+                <a class = "dropdown-item" href = "js1.html">
+                    Laboratorio 4
+                </a>
+                <a class = "dropdown-item" href = "labtwo.html">
+                    Investigación 1
+                </a>
+                <a class = "dropdown-item" href = "quest1.html">
+                    Cuestrionario 1
+                </a>
             </div>
-            <div class="carousel-item">
-              <img src="http://www.elportondelacondesa.com/wp-content/uploads/2013/06/fondo_porton_blog.jpg" alt="BK2" width="1110" height="400">
-              <div class="carousel-caption">
-                <h2>LABORATORIOS</h2>
-                <h4>DAW y BD</h4>
-              </div>   
-            </div>
-            <div class="carousel-item">
-              <img src="http://www.photos-public-domain.com/wp-content/uploads/2011/02/black-painted-brick-wall-texture.jpg" alt="BK3" width="1110" height="400">
-              <div class="carousel-caption">
-                <h2>LABORATORIOS</h2>
-                <h4>DAW y BD</h4>
-              </div>   
-            </div>
-          </div>
-          <a class="carousel-control-prev" href="#demo" data-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-          </a>
-          <a class="carousel-control-next" href="#demo" data-slide="next">
-            <span class="carousel-control-next-icon"></span>
-          </a>
+        </li>
+        <li class = "nav-item">
+            <a class = "nav-link" href = "#contact.html">
+                CONTACTO
+            </a>
+        </li>
+    </ul>
+    </nav> 
+
+    <div class = "container-fluid">
+        <div class="had">
+            <h1 class="had-r1">LABS <span class="had-amp">&amp;</span> INVESTIGATIONS</h1>
         </div>
-    </div>
-    
-    <div class = "container">
-        <nav class = "navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
-        <a class = "navbar-brand" href = "aboutme.html">
-            DPA
-        </a>
-        <ul class = "navbar-nav">
-            <li class = "nav-item">
-                <a class = "nav-link" href = "course.html">
-                    CURSO
-                </a>
-            </li>
-            <li class = "nav-item dropdown">
-                <a class = "nav-link dropdown-toggle" href="#" id = "navbardrop" data-toggle = "dropdown">
-                    LABORATORIOS
-                </a>
-                <div class = "dropdown-menu">
-                    <a class = "dropdown-item" href = "labone.html">
-                        Laboratorio 1
-                    </a>
-                    <a class = "dropdown-item" href = "labthree.html">
-                        Laboratorio 3
-                    </a>
-                    <a class = "dropdown-item" href = "js1.html">
-                        Laboratorio 4
-                    </a>
-                    <a class = "dropdown-item" href = "labtwo.html">
-                        Investigación 1
-                    </a>
-                    <a class = "dropdown-item" href = "quest1.html">
-                        Cuestrionario 1
-                    </a>
-                </div>
-            </li>
-            <li class = "nav-item">
-                <a class = "nav-link" href = "#contact.html">
-                    CONTACTO
-                </a>
-            </li>
-        </ul>
-    </nav>
     </div>
     
     <div class = "container" style = "background-color: slategray">
         <section>
-            <h2>Questions</h2>
-            <h3 class="pregunta">¿Qué es entonces una base de datos - DB?</h3>
-            <p> [1] Es una herramienta para recopilar y organizar información. Y de acuerdo a lo visto en clase es una coleccion de archivos interrelacionados logicamente.</p>
-            <h3 class="pregunta">¿En qué casos es conveniente usar bases de datos?</h3>
-            <p>[1] En su mayoría, las bases de datos comienzan como una lista en una hoja de cálculo. Mientras esta lista va cereciendo comienza a hacer incosistencias en los datos. Cada vez es más difícil realizar busquedas o extracción de información; una vez que estos problemas aparecen es una gran idea crear una base de datos administada por DBMS.</p>
-            <h3 class="pregunta">¿Qué es un sistema de gestión de base de datos - DBMS?</h3>
-            <p>Tener una noción de la mediad de cada uno, pues uno esta en pixeles y el otro en puntos</p>
-            <h3 class="pregunta">Enlista y explica las funciones/responsabilidades que tienen los DBMS.</h3>
-            <p>[2] Abstracción de datos: ahorra a los usuarios detalles acerca del almacenamiento<br>
+            <h2 style="color:aliceblue">Questions</h2>
+            <h3 class="pregunta" style="color:aliceblue">¿Qué es entonces una base de datos - DB?</h3>
+            <p style="color:aliceblue"> [1] Es una herramienta para recopilar y organizar información. Y de acuerdo a lo visto en clase es una coleccion de archivos interrelacionados logicamente.</p>
+            <h3 class="pregunta" style="color:aliceblue">¿En qué casos es conveniente usar bases de datos?</h3>
+            <p style="color:aliceblue">[1] En su mayoría, las bases de datos comienzan como una lista en una hoja de cálculo. Mientras esta lista va cereciendo comienza a hacer incosistencias en los datos. Cada vez es más difícil realizar busquedas o extracción de información; una vez que estos problemas aparecen es una gran idea crear una base de datos administada por DBMS.</p>
+            <h3 class="pregunta" style="color:aliceblue">¿Qué es un sistema de gestión de base de datos - DBMS?</h3>
+            <p style="color:aliceblue">Tener una noción de la mediad de cada uno, pues uno esta en pixeles y el otro en puntos</p>
+            <h3 class="pregunta" style="color:aliceblue">Enlista y explica las funciones/responsabilidades que tienen los DBMS.</h3>
+            <p style="color:aliceblue">[2] Abstracción de datos: ahorra a los usuarios detalles acerca del almacenamiento<br>
             Independencia: se pueden modificar las bases de datos sin cambiar la aplicacion<br>
             Consistencia: los datos que ya estan no se repetirán<br>
             Seguridad: se deben asegurar de que los datos esten protegidos mediante un complejo sistema de permisos<br>
@@ -110,17 +93,120 @@
             Respaldo: los DBMS deben realizar copias de respaldo<br>
             Transacciones: programa que se ejecuta completo o no lo hace<br>
             Tiempo de respuesta: minimizar el tiempo de una base de datos.</p>
-            <h3 class="pregunta">Ejemplifica y justifica en que proyecto de los que has realizado hubiera sido conveniente utilizar una base de datos.</h3>
-            <p>En el proyecto de POO, para manejar los objetos en una bases de datos sin que se repitan y jalar la misma imagen de la misma localidad sin necesidad de duplicar las imagenes.</p>
-            <h2>REFERENCIAS</h2>
-            <p>1.- https://support.office.com/es-es/article/conceptos-b%C3%A1sicos-sobre-bases-de-datos-a849ac16-07c7-4a31-9948-3c8c94a7c204<br>
+            <h3 class="pregunta" style="color:aliceblue">Ejemplifica y justifica en que proyecto de los que has realizado hubiera sido conveniente utilizar una base de datos.</h3>
+            <p style="color:aliceblue">En el proyecto de POO, para manejar los objetos en una bases de datos sin que se repitan y jalar la misma imagen de la misma localidad sin necesidad de duplicar las imagenes.</p>
+            <h2 style="color:aliceblue">REFERENCIAS</h2>
+            <p style="color:aliceblue">1.- https://support.office.com/es-es/article/conceptos-b%C3%A1sicos-sobre-bases-de-datos-a849ac16-07c7-4a31-9948-3c8c94a7c204<br>
             2.- https://aiu.edu/cursos/base%20de%20datos/pdf%20leccion%201/lecci%C3%B3n%201.pdf
             </p>
         </section>
     </div>
     
     <footer>
-        <p>© LABORATORIOS DAGO</p>
+    <div class="jumbotron jumbotron-fluid" style="background-color: darkgray">
+        <div class = "container">
+        <div class="moving-letters">
+            <h1 class="ml5">
+                <span class="text-wrapper">
+                    <span class="line line1"></span>
+                    <span class="letters letters-left">DAW</span>
+                    <span class="letters ampersand">&amp;</span>
+                    <span class="letters letters-right">BD</span>
+                    <span class="line line2"></span>
+                </span>
+            </h1>
+            <script>
+            ml.timelines["ml5"] = anime.timeline({loop: true})
+              .add({
+                targets: '.ml5 .line',
+                opacity: [0.5,1],
+                scaleX: [0, 1],
+                easing: "easeInOutExpo",
+                duration: 700
+              }).add({
+                targets: '.ml5 .line',
+                duration: 600,
+                easing: "easeOutExpo",
+                translateY: function(e, i, l) {
+                  var offset = -0.625 + 0.625*2*i;
+                  return offset + "em";
+                }
+              }).add({
+                targets: '.ml5 .ampersand',
+                opacity: [0,1],
+                scaleY: [0.5, 1],
+                easing: "easeOutExpo",
+                duration: 600,
+                offset: '-=600'
+              }).add({
+                targets: '.ml5 .letters-left',
+                opacity: [0,1],
+                translateX: ["0.5em", 0],
+                easing: "easeOutExpo",
+                duration: 600,
+                offset: '-=300'
+              }).add({
+                targets: '.ml5 .letters-right',
+                opacity: [0,1],
+                translateX: ["-0.5em", 0],
+                easing: "easeOutExpo",
+                duration: 600,
+                offset: '-=600'
+              }).add({
+                targets: '.ml5',
+                opacity: 0,
+                duration: 1000,
+                easing: "easeOutExpo",
+                delay: 1000
+              });
+            </script>
+
+            <style>
+            .ml5 {
+              position: relative;
+              font-weight: 300;
+              font-size: 4.5em;
+              color: #402d2d;
+            }
+            .ml5 .text-wrapper {
+              position: relative;
+              display: inline-block;
+              padding-top: 0.1em;
+              padding-right: 0.05em;
+              padding-bottom: 0.15em;
+              line-height: 1em;
+            }
+            .ml5 .line {
+              position: absolute;
+              left: 0;
+              top: 0;
+              bottom: 0;
+              margin: auto;
+              height: 3px;
+              width: 100%;
+              background-color: aliceblue;
+              transform-origin: 0.5 0;
+            }
+            .ml5 .ampersand {
+              font-family: Baskerville, "EB Garamond", serif;
+              font-style: italic;
+              font-weight: 400;
+              width: 1em;
+              margin-right: -0.1em;
+              margin-left: -0.1em;
+            }
+            .ml5 .letters {
+            color: aliceblue;
+              display: inline-block;
+              opacity: 0;
+            }
+            </style>
+        </div>
+        </div>
+        <div class = "container">
+            <p style="color:aliceblue">© 2018 Laboratorios Dago.</p>
+        </div>
+    </div>
     </footer>
     
 </body>
