@@ -59,6 +59,9 @@
                 <a class = "dropdown-item" href = "js1.html">
                     Laboratorio 4
                 </a>
+                <a class = "dropdown-item" href = "labfive.html">
+                    Laboratorio 5
+                </a>
                 <a class = "dropdown-item" href = "labtwo.html">
                     Investigación 1
                 </a>
@@ -110,11 +113,14 @@
             <div class="puopu">
                 <h4 class="puopu-r1">Tienda<span class="puopu-small">de</span>Interes</h4>
             </div>
+            
             <div class="row">
-                <div class="col-sm-4"><img src="http://salsabor.knorr.com.mx/img/salsas/salsa-verde-cocida.jpg" class="img-thumbnail" alt="Cinque Terre" width="304" height="236"></div>
-                <div class="col-sm-4"><img src="http://salsabor.knorr.com.mx/img/salsas/salsa-de-chile-capon-y-cacahuate.jpg" class="img-thumbnail" alt="Cinque Terre" width="304" height="236"></div>
-                <div class="col-sm-4"><img src="http://salsabor.knorr.com.mx/img/salsas/guacamole.jpg" class="img-thumbnail" alt="Cinque Terre" width="304" height="236"></div>
+                <div class="col-sm-4"><img src="http://salsabor.knorr.com.mx/img/salsas/salsa-verde-cocida.jpg" class="img-thumbnail" alt="Salsa Verde" width="304" height="236"></div>
+                <div class="col-sm-4"><img src="http://salsabor.knorr.com.mx/img/salsas/salsa-de-chile-capon-y-cacahuate.jpg" class="img-thumbnail" alt="Salsa de Cacahuate" width="304" height="236"></div>
+                <div class="col-sm-4"><img src="http://salsabor.knorr.com.mx/img/salsas/guacamole.jpg" class="img-thumbnail" alt="Guacamole" width="304" height="236"></div>
             </div>
+            
+            <p></p>
             <div class="row">
                 <div class="col-sm-4">
                     <div class="row">
@@ -122,27 +128,11 @@
                         <div class="col-lg-8">
                             <div class="input-group">
                                 <span class="input-group-btn">
-                                    <button class="btn btn-default" type="button"><i class="material-icons">remove</i></button>
+                                    <button class="btn btn-default" type="button" onclick="javascript:add_salsaverde()"><i class="material-icons">remove</i></button>
                                 </span>
-                                <input type="text" class="form-control">
+                                <input type="text" class="form-control" id="salsa_verde" value="0">
                                 <span class="input-group-btn">
-                                    <button class="btn btn-default" type="button"><i class="material-icons">add</i></button>
-                                </span>
-                        </div>
-                        </div>
-                        <div class="col-lg-2"></div>
-                    </div>
-                <div class="col-sm-4">
-                    <div class="row">
-                        <div class="col-lg-2"></div>
-                        <div class="col-lg-8">
-                            <div class="input-group">
-                                <span class="input-group-btn">
-                                    <button class="btn btn-default" type="button"><i class="material-icons">remove</i></button>
-                                </span>
-                                <input type="text" class="form-control">
-                                <span class="input-group-btn">
-                                    <button class="btn btn-default" type="button"><i class="material-icons">add</i></button>
+                                    <button class="btn btn-default" type="button" onclick="javascript:remove_salsaverde()"><i class="material-icons">add</i></button>
                                 </span>
                         </div>
                         </div>
@@ -155,11 +145,28 @@
                         <div class="col-lg-8">
                             <div class="input-group">
                                 <span class="input-group-btn">
-                                    <button class="btn btn-default" type="button"><i class="material-icons">remove</i></button>
+                                    <button class="btn btn-default" type="button" onclick="javascript:add_salsacacahuate()"><i class="material-icons">remove</i></button>
                                 </span>
-                                <input type="text" class="form-control">
+                                <input type="text" class="form-control" id="salsa_cacahuate" value="0">
                                 <span class="input-group-btn">
-                                    <button class="btn btn-default" type="button"><i class="material-icons">add</i></button>
+                                    <button class="btn btn-default" type="button" onclick="javascript:remove_salsacacahuate()"><i class="material-icons">add</i></button>
+                                </span>
+                        </div>
+                        </div>
+                        <div class="col-lg-2"></div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="row">
+                        <div class="col-lg-2"></div>
+                        <div class="col-lg-8">
+                            <div class="input-group">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" type="button" onclick="javascript:add_guacamole()"><i class="material-icons">remove</i></button>
+                                </span>
+                                <input type="text" class="form-control" id="salsa_guacamole" value="0">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" type="button" onclick="javascript:remove_guacamole()"><i class="material-icons">add</i></button>
                                 </span>
                         </div>
                         </div>
