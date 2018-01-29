@@ -35,7 +35,6 @@ function add_salsaverde(){
     var count_sv = parseInt(count_salsaverde.value);
     count_sv++;
     count_salsaverde.value = count_sv;
-    console.log("holi");
 }
 
 function remove_salsaverde(){
@@ -44,9 +43,7 @@ function remove_salsaverde(){
   if (count_sv >= 1) {
     count_sv--;
     count_salsaverde.value = count_sv;
-    console.log("holi")
   }  
-    console.log("no entro");
 }
 
 //salsa de cacahuate
@@ -87,5 +84,44 @@ function remove_guacamole(){
   }  
 }
 
+function impuesto(precio){
+    return precio*1.16;
+}
+
+function precio_salsaverde(salsaverde){
+    let precio = 16;
+    return salsaverde*precio;
+}
+
+function precio_salsacacahuate(salsacacahuate){
+    let precio = 18;
+    return salsacacahuate*precio;    
+}
+
+function precio_guacamole(guacamole){
+    let precio = 23;
+    return guacamole*precio;
+}
+
 function precio(){
+    let str = "<h5>PRECIO</h5><table class='table table-striped'><thead><tr><th>Producto</th><th>Cantidad</th><th>Precio</th><th>Precio Total</th><th>Impuesto</th></tr></thead><tbody>";
+    let salsaverde = parseInt(document.getElementById("salsa_verde").value);
+    let salsacacahuate = parseInt(document.getElementById("salsa_cacahuate").value);
+    let guacamole = parseInt(document.getElementById("salsa_guacamole").value);
+    let precio = precio_salsaverde(salsaverde)+precio_salsacacahuate(salsacacahuate)+precio_guacamole(guacamole);
+    let imp = parseFloat(impuesto(precio_salsaverde(salsaverde)))+parseFloat(impuesto(precio_salsacacahuate(salsacacahuate)))+parseFloat(impuesto(precio_guacamole(guacamole)));
+    if (salsaverde!=0){
+        str += "<tr><td>Salsa Verde</td><td>"+salsaverde+"</td><td>16</td><td>"+precio_salsaverde(salsaverde)+"</td><td>"+parseFloat(impuesto(precio_salsaverde(salsaverde))).toFixed(2)+"</td></tr>"
+    }
+    if (salsacacahuate!=0){
+        str += "<tr><td>Salsa de Cacahuate</td><td>"+salsacacahuate+"</td><td>18</td><td>"+precio_salsacacahuate(salsacacahuate)+"</td><td>"+parseFloat(impuesto(precio_salsacacahuate(salsacacahuate))).toFixed(2)+"</td></tr>"
+    }
+    if (guacamole!=0){
+        str += "<tr><td>Guacamole</td><td>"+guacamole+"</td><td>23</td><td>"+precio_guacamole(guacamole)+"</td><td>"+parseFloat(impuesto(precio_guacamole(guacamole))).toFixed(2)+"</td></tr>"
+    }
+    str += "<tr><td></td><td>"+(salsacacahuate+salsaverde+guacamole)+"</td><td></td><td>"+precio+"</td><td>"+imp.toFixed(2)+"</td></tr>";
+    str += "<tr><td></td><td></td><td></td><td>Total=</td><td>"+(precio+imp).toFixed(2)+"</td></tr></tbody></table>"
+    
+    document.getElementById("cobro").innerHTML = str;
+    
 }
