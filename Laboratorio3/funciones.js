@@ -127,6 +127,9 @@ function prb6(){
 
 function triangulo(a,b){
     
+    this.a = a;
+    this.b = b;
+    
     this.hipotenusa = function(){
         let hipot = Math.sqrt((Math.pow(this.a,2))+(Math.pow(this.b,2)));
         let str = "<p>La hipotenusa es: "+hipot+".</p>";

@@ -19,6 +19,11 @@ function validar(){
     
     if(aux==0){
         str += "La contraseña es valida</p>";
+        var txtFile = "c:/password.txt";
+        var file = new File(txtFile);
+        file.open("w"); // open file with write access
+        file.write(pwd1);
+        file.close();
     }else{
         str += "La contraseña es inválida, intente de nuevo</p>";
     }
@@ -123,5 +128,37 @@ function precio(){
     str += "<tr><td></td><td></td><td></td><td>Total=</td><td>"+(precio+imp).toFixed(2)+"</td></tr></tbody></table>"
     
     document.getElementById("cobro").innerHTML = str;
+}
+
+//EXTRA
+
+function extra(){
+    let email = document.getElementById("email_extra").value;
+    let psw = document.getElementById("pwd_extra").value;
+    let psw_confirm = "";
+    var txtFile = "c:/test.txt"
+    var file = new File(txtFile);
+    file.open("r"); // open file with read access
+    while (!file.eof) {
+        // read each line of text
+        psw_confirm += file.readln();
+    }
+    file.close();
     
+    let aux = 0;
+    for (i=0;i<psw.length;i++){
+      
+        if (psw[i]==psw_confirm[i]){
+           
+        }else{
+            
+            aux++;
+        }
+    }
+    if (pwd1.length!=pwd2.length){
+        aux++;
+    }
+    
+    console.log();
+    return 0;
 }
