@@ -1,0 +1,25 @@
+.hadabsolute {
+  color: darkslategray;
+  text-align: center;
+  font-size: 1em;
+  font-family: Lato, serif;
+  position: fixed;!important
+  top: 50%;
+  left: 50%;
+  opacity: 0.5;
+}
+
+.had-r1absolute {
+  line-height: 1em;
+  font-size: 5em;
+  font-weight: 100;
+}
+
+.had-ampabsolute {
+  position: fixed;!importat
+  color: darkgray;
+  font-size: 3em;
+  font-style: italic;
+  vertical-align: bottom;
+  margin: 0 -0.3em;
+}
