@@ -4,9 +4,11 @@
   font-size: 1em;
   font-family: Lato, serif;
   position: fixed;!important
-  top: 50%;
-  left: 50%;
+  top: 100%;
+  left: 30%;
+  right: 20%;
   opacity: 0.5;
+  z-index: 9999;
 }
 
 .had-r1absolute {
@@ -22,4 +24,12 @@
   font-style: italic;
   vertical-align: bottom;
   margin: 0 -0.3em;
+  z-index: 9999;
+}
+
+#div1 {
+    width: 350px;
+    height: 70px;
+    padding: 10px;
+    border: 1px solid black;
 }
