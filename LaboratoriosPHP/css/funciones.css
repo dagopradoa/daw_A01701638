@@ -1,0 +1,80 @@
+.tabla-fondooscuro {
+    text-align: center;!important
+    color: aliceblue;!important
+}
+
+p{
+    font-size:12ppx;
+    text-align:left;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.pregunta {
+    font-size:14ppx;
+    font-style: oblique;
+    text-align: left;
+}
+
+#footerA{
+    color: lightgray;
+    text-align: center;
+}
+
+#footerBg{
+    background-color: #353A41;
+}
+
+.had {
+  color: #d44b15;
+  text-align: center;
+  background-color: #e5e4e4;
+  font-size: 1em;
+  font-family: Lato, serif;
+  padding: 14em 0em 16em;
+}
+
+.had-r1 {
+  line-height: 1em;
+  font-size: 5em;
+  font-weight: 100;
+}
+
+.had-amp {
+  color: #fff;
+  font-size: 3em;
+  font-style: italic;
+  vertical-align: bottom;
+  margin: 0 -0.3em;
+}
+
+.puopu {
+  color: #fff;
+  font-family: Droid Serif, sans-serif;
+  text-align: center;
+  background-image: url(/images/typesource/goal.jpg);
+  background-color: transparent;
+}
+
+.puopu-r1 {
+   color: lightsalmon;
+  text-outline: 1px 1px #d44b15; 
+  font-size: 4em;
+  font-weight: 400;
+  line-height: 1.1em;
+  text-transform: uppercase;
+}
+
+.puopu-small {
+  color: lightsalmon;
+  height: 2em;
+  width: 2em;
+  font-size: 0.25em;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.9em;
+  text-transform: lowercase;
+  display: inline-block;
+  vertical-align: middle;
+  margin: -0.44em 0.1em 0;
+  border: 0.3em solid #D0EEFC;
+}
