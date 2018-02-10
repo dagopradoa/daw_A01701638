@@ -12,14 +12,13 @@
         <p class="text-white" style="text-align: center">Introducción a PHP</p>
       </div>
     </div>
-    <div class="jumbotron jumbotron-fluid">
-        <div class="container">
+    <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-4">
                     <div class="row">
                         <div class="col-sm-3"></div>
                         <div class="col-sm-3">
-                            <button type="button" class="btn btn-primary">Promedio</button>
+                            <button type="button" class="btn btn-primary" onclick="promediarnueve()">Promedio</button>
                         </div>
                         <div class="col-sm-3">
                             <button type="button" class="btn btn-primary">Mediana</button>
@@ -49,12 +48,8 @@
                     </div>
                 </div>
             </div>
-            <p><br><br></p>
-            <div class='form-group' action="">
-                <label for='numbers'>Ingresa los valores separados por comas:</label>
-                <input id='contador' type='text' placeholder='-1,0,1,2,3,..,6'>
-            </div>
-        </div>
+    </div>
+    <div class="jumbotron mt-4" id="labnine">
     </div>
     <div class = "container" style = "background-color: slategray">
         <section>
