@@ -1,3 +1,69 @@
+<?php
+    $banco1 = array(10,20,5,0,17);
+    $banco2 = array(5,23,18,15,2);
+
+    function media($ar){
+        $cont = 0;
+        $i = 0;
+        echo $ar[0];
+        foreach ($ar as $valor){
+            $cont += $valor;
+            $i++;
+        }
+        return $cont/$i;
+    }
+
+    function mediana($ar){
+        sort($ar);
+        if( sizeof($ar) % 2 == 0){
+            return ($ar[(sizeof($ar)/2)-1]+$ar[sizeof($ar)/2]/2);
+        } else {
+            return $ar[sizeof($ar)/2];
+        }
+    }
+
+    function imprimir($ar){
+        echo $ar[0];
+        for ($i=1; $i<sizeof($ar); $i++) {
+            echo ", ".$ar[$i];
+        }
+    }
+
+    function enlistar($ar){
+        echo "<div class='row'><div class='col-sm-4'><ul class='list-group'>";
+        foreach($ar as $valor){
+            echo "<li class='list-group-item'>$valor</li>";
+        }
+        echo "</ul></div>";
+            
+        sort($ar);
+        echo "<div class='col-sm-4'><ul class='list-group'>";
+        foreach($ar as $valor){
+            echo "<li class='list-group-item'>$valor</li>";
+        }
+        echo "</ul></div>";
+        
+        rsort($ar);
+        echo "<div class='col-sm-4'><ul class='list-group'>";
+        foreach($ar as $valor){
+            echo "<li class='list-group-item'>$valor</li>";
+        }
+        echo "</ul></div></div>";
+        
+        echo "<ul class='list-group'><li class='list-group-item>media:".media($ar)."</li>";
+        echo "<li class='list-group-item>mediana:".mediana($ar)."</li></ul>";
+    }
+
+    function tabular($n){
+        echo "<table class='table table-striped'><thead><tr><th>n</th><th>n^2</th><th>n^3</th></tr></thead><tbody>";
+        $i = 0;
+        for($i = 1; $i<=$n; $i++){
+            echo "<tr><td>".$i."</td><td>".pow($i,2)."</td><td>".pow($i,3)."</td></tr>";
+        }
+        echo "</tbody></table>";
+    }
+?>
+
 <?php include("partials/_header.html"); ?>
 <?php include("partials/_bodynav.html");?>
     <div class = "container-fluid">
@@ -13,43 +79,21 @@
       </div>
     </div>
     <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-4">
-                    <div class="row">
-                        <div class="col-sm-3"></div>
-                        <div class="col-sm-3">
-                            <button type="button" class="btn btn-primary" onclick="promediarnueve()">Promedio</button>
-                        </div>
-                        <div class="col-sm-3">
-                            <button type="button" class="btn btn-primary">Mediana</button>
-                        </div>
-                        <div class="col-sm-3"></div>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="row">
-                        <div class="col-sm-3"></div>
-                        <div class="col-sm-3">
-                            <button type="button" class="btn btn-primary">Enlistar</button>
-                        </div>
-                        <div class="col-sm-3">
-                            <button type="button" class="btn btn-primary">Tabular</button>
-                        </div>
-                        <div class="col-sm-3"></div>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="row">
-                        <div class="col-sm-3"></div>
-                        <div class="col-sm-6">
-                            <button type="button" class="btn btn-primary">Libre</button>
-                        </div>
-                        <div class="col-sm-3"></div>
-                    </div>
-                </div>
-            </div>
+        <h4>Prueba 1 <?php imprimir($banco1)?></h4>
+        <div class="row">
+            <div class="col-sm-6">Media: <?php echo media($banco1)?></div>
+            <div class="col-sm-6">Mediana: <?php echo mediana($banco1)?></div>
+        </div>
+        <?php enlistar($banco1)?>
+        <h4>Prueba 2 <?php imprimir($banco2)?></h4>
+        <div class="row">
+            <div class="col-sm-6">Media: <?php echo media($banco2)?></div>
+            <div class="col-sm-6">Mediana: <?php echo mediana($banco2)?></div>
+        </div>
+        <?php enlistar($banco2)?>
     </div>
-    <div class="jumbotron mt-4" id="labnine">
+    <div class="container-fluid">
+        <?php tabular(5)?>
     </div>
     <div class = "container" style = "background-color: slategray">
         <section>
