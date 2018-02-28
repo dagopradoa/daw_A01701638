@@ -166,7 +166,7 @@ function test_input($data) {
 </div>
 
 <div class="container container-fluid">
-    <div class="jumbotron jumbotron-fluid bg-dark">
+    <div class="jumbotron jumbotron-fluid">
         <section>
             <h2 >Questions</h2>
             <h3 class="pregunta">¿Por qué es una buena práctica separar el controlador de la vista?.</h3>
