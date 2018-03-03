@@ -1,0 +1,17 @@
+<body>
+    <nav class = "navbar fixed-top navbar-expand-sm bg-dark navbar-dark">
+    <a class = "navbar-brand" href = "aboutme.php">DPA</a>
+    <ul class = "navbar-nav">
+        <li class = "nav-item">
+            <a class = "nav-link" href = "course.php">CURSO</a>
+        </li>
+        <li class = "nav-item">
+            <a class = "nav-link" href="#">LABORATORIOS</a>
+        </li>
+        <?php if(isset($_SESSION["usuario"])): ?>
+            <li class=nav-item>
+                    <a class="btn bt-outline-danger" href="logout.php">Log Out</a>
+            </li>
+        <?php endif; ?>
+    </ul>
+    </nav>
