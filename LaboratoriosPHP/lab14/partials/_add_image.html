@@ -6,7 +6,7 @@
 
 <div class="jumbotron jumbotron-fluid" style="background-color:darkgray;">
   <div class="container">
-    <h1 class="text-white">Laboratorios 14 & 16</h1>
+    <h1 class="text-white">Laboratorios 14 &amp; 16</h1>
     <p class="text-white" style="text-align: center">PHP, consultas dinámicas y manipulación de registros en BD</p>
   </div>
 </div>
@@ -50,24 +50,25 @@
     <div class="jumbotron jumbotron-fluid">
         <section>
             <h2 >Questions</h2>
-            <h3 class="pregunta">¿Por qué es importante hacer un session_unset() y luego un session_destroy()?</h3>
-            <p>[1] Session_unset() libera todas las variables utilizadas por la sesión.<br>
-            [2] Session_destroy() destruye la informacion almacenada por la sesion.<br>
-            Es importante hacerlo en ese orden para asegurar que no se deja basura.</p>
-            <h3 class="pregunta">¿Cuál es la diferencia entre una variable de sesión y una cookie?</h3>
-            <p>El uso de variables de sesión utilizan las cookies, mientras que las cookies no desperdician recursos del servidor. Sin embargo, las variables desesion solo duran una sesión; mientras que las cookies se conservan.</p>
-            <h3 class="pregunta">¿Qué técnicas se utilizan en sitios como facebook para que el usuario no sobreescriba sus fotos en el sistema de archivos cuando sube una foto con el mismo nombre?</h3>
-            <p></p>
-            <h3 class="pregunta">¿Qué es CSRF y cómo puede prevenirse?</h3>
-            <p>[4] Es un ataque que forza a un usuario a ejecutar acciones que no quieren ejecutar dentro de una aplicacion en la que ya estan autenticados.<br>
-            [5] Una forma de evadir estos ataques es generando un token unico para cada sesión. Guardar cada de cada campo se guarda en una variable de sesión.
-            </p>
+            <h3 class="pregunta">¿Qué es ODBC y para qué es útil?</h3>
+            <p>[1] Es una especificación para una base de datos API que contienee las rutinas de acceso</p>
+            <h3 class="pregunta">¿Qué es SQL Injection?</h3>
+            <p>[2] Es una técnica de insersión de código que puede destruir una base de datos mediante código malicioso.</p>
+            <h3 class="pregunta">¿Qué técnicas puedes utilizar para evitar ataques de SQL Injection?</h3>
+            <p>[3] Mediante la parametrización de queries y uso de statements preparados</p>
+            <h3 class="pregunta">¿Por qué es una buena práctica separar el modelo del controlador?</h3>
+            <p>De acuerdo a lo visto en clase, para prevenir ataques.<br>
+            [4] Permitir la modificación de los modelos y que el resto de la aplicación permanezca intacta</p>
+            <h3 class="pregunta">¿Qué es SQL injection y cómo se puede prevenir?</h3>
+            <p>[2] Es una técnica de insersión de código que puede destruir una base de datos mediante código malicioso.<br>
+            [3] Mediante la parametrización de queries y uso de statements preparados</p>
             <h2>REFERENCIAS</h2>
-            1.- http://php.net/manual/en/function.session-unset.php<br>
-            2.- http://php.net/manual/en/function.session-destroy.php<br>
-            3.-<br>
-            4.- https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)<br>
-            5.- https://www.wikihow.com/Prevent-Cross-Site-Request-Forgery-(CSRF)-Attacks-in-PHP
+            <p>
+            1.- https://docs.microsoft.com/en-us/sql/odbc/reference/what-is-odbc<br>
+            2.- https://www.w3schools.com/sql/sql_injection.asp<br>
+            3.- https://www.owasp.org/index.php/SQL_Injection_Prevention_Cheat_Sheet<br>
+            4.- https://codigofacilito.com/articulos/mvc-model-view-controller-explicado
+            </p>
             <p></p>
         </section>
     </div>
