@@ -1,0 +1,30 @@
+<div class="wrapper">
+    Bienvenido <?php echo $_SESSION["usrname"] ?>
+    <a  class="button" href="logout.php" role="button">Log out</a>
+    <a class="button" href="add.php" role="button">add</a>
+    <a class="button" data-open="editar" role="button">Edit</a>
+
+    <br>
+    
+    <?php getProductos()?>
+    
+    <img src='<?=$_SESSION["ruta archivo"]?>' alt="Posicion de la imagen"><?php echo $_SESSION["producto"]?>
+    <div class="reveal" id="editar" data-reveal>
+        <h1>Editar imagen</h1>
+        <p class="lead">¿Que foto quieres editar?</p>
+        <form action="editar.php" method="post" enctype="multipart/form-data">
+            <label for="producto">
+                Nombre del producto
+                <input id="producto" type="text" name="producto" placeholder="ejemplo1">
+            </label>
+            <label for="image">
+                Nombre de imagen
+                <input type="text" name="image" id="image">
+                <input type="submit" value="Save changes" name="submit" placeholder="ejemplo1.jpg">
+            </label>
+        </form>
+        <button class="close-button" data-close aria-label="Close modal" type="button">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+</div>
