@@ -1,18 +1,31 @@
 <div class="wrapper">
     Bienvenido <?php echo $_SESSION["usrname"] ?>
-    <a  class="button" href="logout.php" role="button">Log out</a>
-    <a class="button" href="add.php" role="button">add</a>
-    <a class="button" data-open="editar" role="button">Edit</a>
+    <p>Login correcto, felicidades</p>
+    
+    <nav class="navbar navbar-expand-sm bg-light navbar-light">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+            <a class="nav-link" href="logout.php" role="button">Log Out</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link"href="add.php" role="button">Agregar</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" data-open="editar" role="button">Editar</a>
+            </li>
+        </ul>
+    </nav>
 
     <br>
     
     <?php getProductos()?>
+    <?php getProductosRaw()?>
     
-    <img src='<?=$_SESSION["ruta archivo"]?>' alt="Posicion de la imagen"><?php echo $_SESSION["producto"]?>
+    <img src='<?=$_SESSION["ruta archivo"]?>' alt="Aquí estará tu imagen"><?php echo $_SESSION["producto"]?>
     <div class="reveal" id="editar" data-reveal>
-        <h1>Editar imagen</h1>
-        <p class="lead">¿Que foto quieres editar?</p>
-        <form action="editar.php" method="post" enctype="multipart/form-data">
+        <h1>Editar una foto</h1>
+        <p class="lead">Escribe el nombre de la foto a editar y cambia en nombre de la imagen.</p>
+        <form action="edit.php" method="post" enctype="multipart/form-data">
             <label for="producto">
                 Nombre del producto
                 <input id="producto" type="text" name="producto" placeholder="ejemplo1">
