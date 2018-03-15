@@ -1,37 +1,61 @@
-<div class = "container-fluid">
-    <div class="had">
-        <h1 class="had-r1">LABS <span class="had-amp">&amp;</span> INVESTIGATIONS</h1>
+<div class="container bg-dark">
+    <div class = "container-fluid">
+        <div class="had">
+            <h1 class="had-r1">LABS <span class="had-amp">&amp;</span> INVESTIGATIONS</h1>
+        </div>
     </div>
-</div>
 
-<p></p>
+    <p></p>
 
-<div class="container container-fluid">
-    <div class="row">
-        <div class="col-sm-3"></div>
-        <div class="col-sm-6">
-            <div class="card">
-                <div class="card-block">
-                    <p></p>
-                    <div class="container">
-                        <form  action="session.php" method="POST">
-                            <div class="form-group">
-                                <label for="Username">Usuario</label>
-                                <input type="text" class="form-control" id="usuario" name="usuario" placeholder="dago" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="Passwd">Contraseña</label>
-                                <input type="password" class="form-control" id="password" name="password" placeholder="1701638" required>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Login</button>
-                        </form>
+    <div class="container container-fluid">
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-block">
+                        <p></p>
+                        <div class="container">
+                            <form  action="session.php" method="POST">
+                                <div class="form-group">
+                                    <label for="Username">Usuario</label>
+                                    <input type="text" class="form-control" id="usuario" name="usuario" placeholder="dago" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="Passwd">Contraseña</label>
+                                    <input type="password" class="form-control" id="password" name="password" placeholder="1701638" required>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Login</button>
+                            </form>
+                        </div>
+                        <p></p>
                     </div>
-                    <p></p>
                 </div>
             </div>
+            <div class="col-sm-3"></div>
         </div>
-        <div class="col-sm-3"></div>
     </div>
-</div>
 
-<p></p>
+    <div class="container container-fluid">
+        <div class="jumbotron jumbotron-fluid bg-light">
+            <section>
+                <h2>Questions</h2>
+                <p><strong>¿Qué importancia tiene AJAX en el desarrollo de RIA's (Rich Internet Applications?</strong></p>
+                <p>[1] Puedes leer y enviar datos desde el servidor y actualizar una página sin necesidad de recargarla</p>
+                <p><strong>¿Qué implicaciones de seguridad tiene AJAX? ¿Dónde se deben hacer las validaciones de seguridad, del lado del cliente o del lado del servidor?</strong></p>
+                <p>[2] Los principales problemas de seguridad se ven del lado del usuario ya que el código JavaScript siempre es visible para los clientes, que pueden inferir debilidades del servidor.<br>
+                Las validaciones se deberán hacer en el lado del servidor para no se hagan consultas maliciosas del lado del cliente.</p>
+                <p><strong>¿Qué es JSON?</strong></p>
+                <p>[3] JavaScript object notation, es un formato para el intercambios de datos, básicamente JSON describe los datos con una sintaxis dedicada que se usa para identificar y gestionar los datos.</p>
+                <h2>REFERENCIAS</h2>
+                <p>
+                [1] https://www.w3schools.com/js/js_ajax_intro.asp<br>
+                [2] https://www.tutorialspoint.com/ajax/ajax_security.htm<br>
+                [3] https://geekytheory.com/curso/json/que-es-y-para-que-sirve-json<br>
+                </p>
+                <p></p>
+            </section>
+        </div>
+    </div>
+
+    <p></p>
+</div>

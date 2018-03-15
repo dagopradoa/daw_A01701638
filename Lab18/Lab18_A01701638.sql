@@ -41,11 +41,11 @@ ORDER BY 'Promedio'
 --34 filas
 --La fragua|1000|Varilla3/16|142.00
 
-INSERT INTO Materiales VALUES('1431','Varilla 3/4','150','1.16')
-INSERT INTO Materiales VALUES('1432','Pinza pelacables','475','1.16')
-INSERT INTO Materiales VALUES('1433','Arcilla','30','2.03')
-INSERT INTO Materiales VALUES('1434','Marmolina','40','1.40')
-INSERT INTO Materiales VALUES('1435','Marmol','1500','2.50')
+INSERT INTO Materiales VALUES('1431','Varilla 3/4','150','16')
+INSERT INTO Materiales VALUES('1432','Pinza pelacables','475','16')
+INSERT INTO Materiales VALUES('1433','Arcilla','30','12.3')
+INSERT INTO Materiales VALUES('1434','Marmolina','40','14')
+INSERT INTO Materiales VALUES('1435','Marmol','1500','25')
 
 SELECT *
 FROM Materiales
