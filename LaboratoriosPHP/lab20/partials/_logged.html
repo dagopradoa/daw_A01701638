@@ -1,0 +1,43 @@
+<div class="wrapper">
+    Bienvenido <?php echo $_SESSION["usrname"] ?>
+    <p>Login correcto, felicidades</p>
+    
+    <nav class="navbar navbar-expand-sm bg-light navbar-light">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+            <a class="nav-link" href="logout.php" role="button">Log Out</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link"href="add.php" role="button">Agregar</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" data-open="editar" role="button">Editar</a>
+            </li>
+        </ul>
+    </nav>
+
+    <br>
+    
+    <?php getProductos()?>
+    <?php getProductosRaw()?>
+    
+    <img src='<?=$_SESSION["ruta archivo"]?>' alt="Aquí estará tu imagen"><?php echo $_SESSION["producto"]?>
+    <div class="reveal" id="editar" data-reveal>
+        <h1>Editar una foto</h1>
+        <p class="lead">Escribe el nombre de la foto a editar y cambia en nombre de la imagen.</p>
+        <form action="edit.php" method="post" enctype="multipart/form-data">
+            <label for="producto">
+                Nombre del producto
+                <input id="producto" type="text" name="producto" placeholder="ejemplo1">
+            </label>
+            <label for="image">
+                Nombre de imagen
+                <input type="text" name="image" id="image">
+                <input type="submit" value="Save changes" name="submit" placeholder="ejemplo1.jpg">
+            </label>
+        </form>
+        <button class="close-button" data-close aria-label="Close modal" type="button">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+</div>
