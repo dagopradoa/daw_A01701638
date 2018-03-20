@@ -1,3 +1,8 @@
+$(document).ready(function(){
+    $('.anim1').mouseenter(function(){
+        $('.anim1').fadeTo('fast',1);
+    });
+});
 function getRequestObject() {
     // Asynchronous objec created, handles browser DOM differences
 

@@ -1,0 +1,116 @@
+¿Qué hace el primer bloque del código (bloque del IF)? 
+	Busca dentro de los objetos alguno que se llame creaMaterial (especificamente detro de los procedures)
+¿Para qué sirve la instrucción GO? 
+	Se utiliza para agrupar comandos en batches y también se encarga de separar las partes en batches
+Explica que recibe como parámetro este Procedimiento y ¿qué tabla modifica?
+	Recibe 4 parametros (clave, descripcion, costo, impuesto) y modifica la tabla de Materiales
+
+Explica en qué recibe como parámetro el procedimineto queryMaterial y qué hace
+	Recibe como parametro la parte de la descripcion y el costo mínimo del material.
+	Se presentan los materiales que contengan la descripcion que se dio como parametro y tengan costo mayor al que se 	dio como parametro.
+
+CREATE PROCEDURE modificaMaterial
+@uclave NUMERIC(5,0),
+@udescripcion VARCHAR(50),
+@ucosto NUMERIC(8,2),
+@uimpuesto NUMERIC(6,2)
+AS
+UPDATE Materiales
+SET Descripcion = @udescripcion,Costo = @ucosto, PorcentajeImpuesto=@uimpuesto
+WHERE Clave=@uclave
+GO
+
+eliminaMaterial que elimina el registro de la tabla materiales cuya llave sea la clave que se recibe como parámetro.7
+CREATE PROCEDURE deleteMaterial
+@uclave NUMERIC(5,0)
+AS
+DELETE FROM Materiales
+WHERE Clave = @uclave
+GO 
+
+Desarrollar los procedimientos (almacenados) creaProyecto , modificaproyecto y eliminaproyecto, hacer lo mismo para 
+las tablas proveedores y entregan.
+
+CREATE PROCEDURE creaProyecto
+@num NUMERIC(5,0),
+@denom VARCHAR(50)
+AS
+	INSERT INTO Proyectos VALUES(@num,@denom)
+GO
+
+CREATE PROCEDURE modifyProyecto
+    @num NUMERIC(5,0),
+    @denom VARCHAR(50)
+AS
+	UPDATE Proyectos
+	set Denominacion = @denom
+	WHERE Numero = @num
+GO
+
+CREATE PROCEDURE deleteProyecto
+    @num NUMERIC(5,0)
+AS
+	DELETE FROM Proyectos
+	WHERE Numero = @num
+GO
+
+
+CREATE PROCEDURE creaProveedor
+    @rfc VARCHAR(13),
+    @razonsocial VARCHAR(50)
+AS
+	INSERT INTO Proveedores VALUES(@rfc,@razonsocial)
+GO
+
+CREATE PROCEDURE modifyProveedor
+    @rfc VARCHAR(13),
+    @razonsocial VARCHAR(50)
+AS
+	UPDATE Proveedores
+	set RazonSocial = @razonsocial
+	WHERE RFC = @rfc
+GO
+
+CREATE PROCEDURE deleteProveedor
+    @rfc VARCHAR(13)
+AS
+	DELETE FROM Proveedores
+	WHERE RFC = @rfc
+GO
+
+
+CREATE PROCEDURE creaEntrega
+@clave NUMERIC(5),
+@rfc VARCHAR(13),
+@num NUMERIC(5),
+@fecha DATETIME,
+@cantidad NUMERIC(5,2)
+AS
+INSERT INTO Entregan VALUES(@clave,@rfc,@num,@fecha,@cantidad)
+GO
+
+CREATE PROCEDURE modifyEntrega
+@clave NUMERIC(5),
+@rfc VARCHAR(13),
+@num NUMERIC(5),
+@fecha DATETIME,
+@cantidad NUMERIC(5,2)
+AS
+UPDATE Entregan
+set Fecha = @fecha, Cantidad = @cantidad
+WHERE Clave = @clave AND RFC = @rfc AND Numero = @num
+GO
+
+CREATE PROCEDURE deleteEntrega
+@clave NUMERIC(5),
+@rfc VARCHAR(13),
+@num NUMERIC(5)
+AS
+DELETE FROM Entregan
+WHERE Clave = @clave AND RFC = @rfc AND Numero = @num 
+GO
+
+¿Qué ventajas tienen el utilizar Store Procedures en una aplicación cliente-servidor?
+	Cuando son comando muy complejos, conviene encapsularlos en algo sencillo de ejecutar y recordar.
+¿Qué ventajas tiene utilizar SP en un proyecto?
+	Cuando hay alguien que le de mantenimiento a la base de datos pero no tiene suficientes conocimientos, puedes encapsular la complejidad para el empleado.
