@@ -1,0 +1,7 @@
+Buena característica
+Axuiliadores en los botones
+
+-Se despliega una ventanilla al posicionar el cursor sobre algún botón.
+-Un botón te despliega una explicación de la funcion del mismo.
+-Le agrega valor a la página en cuestión de intuitividad
+
