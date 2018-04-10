@@ -1,0 +1,29 @@
+¿Que pasa cuando deseas realizar esta consulta?
+	Obtienes los datos que insertaste hace un momento 
+	001	Manuel Rios Maldonado	9000.00
+	002	Pablo Perez Ortiz	5000.00
+	003	Luis Flores Alvarado	8000.00
+
+¿Qué pasa cuando deseas realizar esta consulta? 
+	No puedo visualizar la tabla como usualmente lo hago.
+
+Intenta con la siguiente consulta desde la segunda sesión. 
+SELECT * FROM CLIENTES_BANCA where NoCuenta='001' 
+Explica por qué ocurre dicho evento. 
+	Al realizar la transaccion, se bloquea la tabla pero no el campo
+
+Por último regresa a la ventana que mantiene activa tu primer sesión, agrega el siguiente comando a la pantalla y ejecútalo. 
+ROLLBACK TRANSACTION PRUEBA2 
+Revisa nuevamente el contenido de la tabla clientes_banca desde la ventana que inicializaste como la segunda sesión. 
+SELECT * FROM CLIENTES_BANCA 
+¿Qué ocurrió y por qué? 
+	Se deshace la transaccion previamente realizada, por el ROLLBACK.
+
+¿Para qué sirve el comando @@ERROR revisa la ayuda en línea? 
+	Regresa el numero del error la de la ultima transaccion SQL ejecutada
+
+¿Explica qué hace la transacción? 
+	Intenta insertar una cuenta '001' que ya existe.
+
+¿Hubo alguna modificación en la tabla? Explica qué pasó y por qué.
+	No, porque hicimos un rollback al final.
